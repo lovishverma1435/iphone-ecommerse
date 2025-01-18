@@ -14,11 +14,17 @@ export default {
         red_1: {
           red1: "#DB4444"
         },
+        red_2:{
+          lightred:"#E07575"
+        },
         black_1: {
           black: "#000000"
         },
         gray_1:{
           gray:"#FFFFFF"
+        },
+        gray_2:{
+          gray:"#F5F5F5"
         }
       },
 

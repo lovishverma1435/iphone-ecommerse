@@ -20,8 +20,8 @@ function BannerSec() {
                 <ul className='flex flex-col  categoryLink pt-10 border-r-[2px]  pr-4 transform'>
                     {
                         categoryLink.map((item, index) => (
-                            <li key={index} className='mb-4 hover:scale-105 transition-all ease-in duration-100'>
-                                <NavLink to={item.to} className="font-p flex items-center justify-between gap-3 group cursor-pointer w-[217px]">{item.name}
+                            <li key={index} className='mb-4'>
+                                <NavLink to={item.to} className="font-p flex items-center justify-between gap-3 group cursor-pointer w-[217px] hover:text-red_1-red1">{item.name}
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className=''>
                                         <path d="M12.95 11.636L8 6.68597L9.414 5.27197L15.778 11.636L9.414 18L8 16.586L12.95 11.636Z" fill="black" className={`${item.arrow ? "opacity-100" : "opacity-0"} transition-all duration-300 group-hover:opacity-80`} />
                                     </svg>
