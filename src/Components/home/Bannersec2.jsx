@@ -1,4 +1,5 @@
-import React, { } from 'react'
+import React from 'react'
+import { useRef } from 'react';
 import leftarrow from '../../assets/images/arrow-left.svg'
 import rightarrow from '../../assets/images/arrow-right.svg'
 // import image1 from '../../assets/images/Frame611.png'
@@ -9,7 +10,17 @@ import rightarrow from '../../assets/images/arrow-right.svg'
 // import icon2 from '../../assets/images/Quick-View.svg'
 import imagesection from '../json/bannerimage.json'
 import { NavLink } from 'react-router-dom'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Navigation } from 'swiper/modules';
+
+// import './styles.css';
 const Bannersec2 = () => {
+    const swiperRef = useRef();
 
     return (
         <>
@@ -40,35 +51,68 @@ const Bannersec2 = () => {
                             <li className='flex flex-col'>Seconds <span className='text-4xl font-bold tracking-wide'>56</span></li>
                         </ul>
                         <div className=""></div>
-                        <div className="flex items-center justify-end gap-[19px]">
-                            <img className='h-[46px] w-[46px] bg-gray_2-gray rounded-3xl' src={leftarrow} alt="image" />
-                            <img className='h-[46px] w-[46px] bg-gray_2-gray rounded-3xl' src={rightarrow} alt="iamge" />
+                        <div className="flex items-center justify-end gap-[19px] ">
+                            <div className='flex gap-2'>
+                                <div className="w-[46px] h-[46px] bg-gray_2-gray rounded-[80%] flex item items-center justify-center">
+                                    <button onClick={() => swiperRef.current?.slidePrev()}> <img src={leftarrow} alt="left" /> </button>
+                                </div>
+                                <div className="w-[46px] hi[46px] bg-gray_2-gray rounded-[80%] flex item items-center justify-center">
+                                    <button onClick={() => swiperRef.current?.slideNext()}> <img src={rightarrow} alt="right" /> </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-4 imagesection container">
-                    {
-                        imagesection.map((item, index) => (
-                            <div key={index}>
-                                <NavLink to={item.to}>
-                                    <div className="">
-                                        <div className="relative"> 
-                                            <img src={`/src/assets/images/${item.image}`} alt="image" />
+                <div className="imagesection container  mt-10">
+
+                    <Swiper slidesPerView={4}
+                        spaceBetween={30}
+
+                        loop={true}
+                        modules={[Navigation]}
+                        navigation={true}
+                        onBeforeInit={(swiper) => {
+                            swiperRef.current = swiper;
+                        }}
+                        className="mySwiper">
+                        {
+                            imagesection.map((item, index) => (
+                                <SwiperSlide key={index}>
+                                    <NavLink to={item.to}>
+                                        <div>
+                                            <div className="bg-[#F5F5F5] group rounded-md relative">
+                                                <img className='relative hover:scale-75   transition-all duration-300 py-[35px] px-10' src={`/src/assets/${item.image}`} alt="image" />
+                                                <h2 className="flex items-center justify-center  h-0 transition-all   duration-300 bg-black w-[270px] rounded-b-md absolute bottom-0 font-p font-medium  text-base text-white  group-hover:h-[41px] ">Add To Cart</h2>
+                                                <div className="flex absolute top-3 left-3 w-[55px] h-[26px] bg-red_1-red1 items-center justify-center rounded-md">
+                                                    <h4 className='text-[#FAFAFA] font-normal font-p text-xs'>{item.discount}</h4>
+                                                </div>
+                                                <div className="flex absolute top-3 right-3">
+                                                    <img src={`/src/assets/${item.heart}`} alt="heart" />
+                                                </div>
+                                                <div className="flex absolute top-[54px] right-3">
+                                                    <img src={`/src/assets/${item.view}`} alt="" />
+                                                </div>
+                                            </div>
+                                            <div className="pt-4">
+                                                <h1 className='font-p font-medium text-base'>{item.name}</h1>
+                                                <div className="flex gap-2 py-2">
+                                                    <h1 className='text-red_1-red1 font-p font-medium text-base'>{item.offprice}</h1>
+                                                    <h1 className='line-through opacity-50 font-p font-medium text-base'>{item.price}</h1>
+                                                </div>
+                                                <div className="flex gap-2">
+                                                    <img src={`/src/assets/${item.rating}`} alt="rating" />
+                                                    <h4 className='font-p text-sm font-semibold text-[#000000] opacity-[50%]'>{item.viewer}</h4>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h1>{item.name}</h1>
-                                        <div className="flex gap-2">
-                                            <h1 className='text-red_1-red1'>{item.offprice}</h1>
-                                            <h1 className='line-through opacity-50'>{item.price}</h1>
-                                        </div>
-                                        <div className="">
-                                            <img src={`/src/assets/images/${item.rating}`} alt="rating" />
-                                        </div>
-                                        <img src={`/src/assets/images/${item.heart}`} alt="heart" />
-                                    </div>
-                                </NavLink>
-                            </div>
-                        ))
-                    }
+                                    </NavLink>
+                                </SwiperSlide>
+                            ))
+                        }
+                    </Swiper>
+                    <div className="flex items-center justify-center pt-[73px] pb-[60px] border-b-[2px]">
+                        <button className='bg-red_1-red1 text-white_1-white font-p font-medium text-base py-4 px-12 rounded-md'>View All Product</button>
+                    </div>
                 </div>
             </section>
 

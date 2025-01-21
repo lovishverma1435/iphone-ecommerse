@@ -25,11 +25,17 @@ export default {
         },
         gray_2:{
           gray:"#F5F5F5"
+        },
+        white_1:{
+          white:"#FAFAFA"
         }
       },
 
       fontFamily: {
-        "inter": [""]
+        i: ['"Inter"', 'serif'],
+        p: ['"Poppins"', 'serif']
+
+  
       }
     },
   },

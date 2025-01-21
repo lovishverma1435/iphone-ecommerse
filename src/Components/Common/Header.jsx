@@ -5,6 +5,7 @@ import image from '../../assets/images/Vector.svg'
 import image1 from '../../assets/images/Wishlist.svg'
 import image2 from '../../assets/images/cart1.svg'
 import image3 from '../../assets/images/userprofile.svg'
+import image4 from '../../assets/userwhite.svg'
 import bagimg from '../../assets/images/icon-mallbag.svg'
 import cancelimg from '../../assets/images/icon-cancel.svg'
 import reviewimg from '../../assets/images/icon-Reviews.svg'
@@ -51,15 +52,22 @@ const Header = () => {
                 <img className='group-hover:text-red_1-red1 cursor-pointer' src={image} />
               </div>
               <div className="flex items-center justify-center gap-4 cursor-pointer">
-                <img className='hover:-translate-y-1 transition-all duration-300' src={image1} />
-                <img className='hover:-translate-y-1 transition-all duration-300' src={image2} />
-                <button onMouseOver={() => setRotate(true)} onMouseLeave={()=>{setRotate(false)}} className={`transition-all duration-200 relative${rotate && ""}`}>
-                  <img className='hover:-translate-y-1 transition-all duration-300 w-8 h-8 rounded-3xl hover:bg-red_1-red1' src={image3} />
-                  {rotate && <ul className='absolute flex flex-col gap-2 py-2 px-4 bg-black text-white z-10 transition-all duration-200 ease-in w-48 right-3'>
-                    <li className='flex items-center gap-4'><img src={bagimg} alt="img" />My Order</li>
-                    <li className='flex items-center gap-4'><img src={reviewimg} alt="img" />My review</li>
-                    <li className='flex items-center gap-4'><img src={cancelimg} alt="img" />My cancellations</li>
-                    <li className='flex items-center gap-4'><img src={logoutimg} alt="img" />LogOut</li>
+                <img src={image1} />
+                <img src={image2} />
+                <button onClick={() => setRotate(!rotate)} className={`transition-all duration-200 relative group${rotate && ""}`}>
+                  {
+                    !rotate && <img src={"/src/assets/images/userprofile.svg"} />
+                  }
+                  {
+                    rotate && <img src={"/src/assets/userred.svg"} alt="" />
+                  }
+
+                  {rotate && <ul className='absolute flex flex-col gap-[13px] py-2 px-4 backdrop-blur-3xl text-white z-10 transition-all duration-200 ease-in right-0 rounded-md w-[224px]'>
+                    <li className='bar-popup font-p'><img src={image4} alt="img" />Manage My Account</li>
+                    <li className='bar-popup font-p'><img src={bagimg} alt="img" />My Order</li>
+                    <li className='bar-popup font-p'><img src={cancelimg} alt="img" />My cancellations</li>
+                    <li className='bar-popup font-p'><img src={reviewimg} alt="img" />My reviews</li>
+                    <li className='bar-popup font-p'><img src={logoutimg} alt="img" />LogOut</li>
                   </ul>}
                 </button>
               </div>

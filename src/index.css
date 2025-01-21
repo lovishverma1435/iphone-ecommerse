@@ -20,13 +20,7 @@
   }
 
 
-  .font-i {
-    font-family: "Inter", serif;
-  }
-
-  .font-p {
-    font-family: "Poppins", serif;
-  }
+ 
 
   .menuLinks .active {
     @apply text-red-500 border-b border-black text-base
@@ -39,6 +33,15 @@
 
   .menuLinks a:hover {
     border-bottom-color: black;
+  }
+  .bar-popup{
+    display:flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FAFAFA;
+    font-weight: 400;
   }
 
 
