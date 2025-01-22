@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import categoryLink from '../json/categories.json'
-import bannerSection from '../json/bannercontent.json'
+import categoryLink from '../../json/categories.json'
+import bannerSection from '../../json/bannercontent.json'
 import { NavLink } from 'react-router-dom'
 import logo from '../../assets/images/applelogo.png'
 // import arrow from '../../assets/images/arrow.svg'

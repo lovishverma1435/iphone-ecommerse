@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import menuLinks from "../json/menuLink.json"
+import menuLinks from "../../json/menuLink.json"
 import { NavLink } from 'react-router-dom'
 import image from '../../assets/images/Vector.svg'
 import image1 from '../../assets/images/Wishlist.svg'

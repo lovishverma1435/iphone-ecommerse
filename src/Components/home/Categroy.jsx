@@ -1,11 +1,69 @@
 import React from 'react'
+import { useRef } from 'react';
+import browse from '../../json/browse.json'
+import leftarrow from '../../assets/images/arrow-left.svg'
+import rightarrow from '../../assets/images/arrow-right.svg'
+import { NavLink } from 'react-router-dom'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Navigation } from 'swiper/modules';
 
 const Categroy = () => {
-  return (
-    <>
-      
-    </>
-  )
+    const swiperRef = useRef();
+
+    return (
+        <>
+            <div className="container border-b">
+                <div className="flex items-center gap-4 mt-20">
+                    <div className="bg-red_1-red1 w-5 h-10 rounded-md"></div>
+                    <div className="text-red_1-red1 font-p font-semibold">Categories</div>
+                </div>
+                <div className="flex items-center justify-between">
+                    <div className="pt-6 flex items-end">
+                        <h1 className='text-4xl font-semibold font-i tracking-wide'>Browse By Category</h1>
+                    </div>
+                    <div className="flex items-center justify-end gap-[19px] ">
+                        <div className='flex gap-2'>
+                            <div className="w-[46px] h-[46px] bg-gray_2-gray rounded-[80%] flex item items-center justify-center">
+                                <button onClick={() => swiperRef.current?.slidePrev()}> <img src={leftarrow} alt="left" /> </button>
+                            </div>
+                            <div className="w-[46px] hi[46px] bg-gray_2-gray rounded-[80%] flex item items-center justify-center">
+                                <button onClick={() => swiperRef.current?.slideNext()}> <img src={rightarrow} alt="right" /> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="browse  pt-[60px]">
+                    <Swiper slidesPerView={6}
+                        spaceBetween={30}
+                        loop={true}
+                        modules={[Navigation]}
+                        navigation={true}
+                        onBeforeInit={(swiper) => {
+                            swiperRef.current = swiper;
+                        }}
+                        className="mySwiper">
+
+                    {
+                        browse.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <NavLink to={item.to}>
+                                    <div className="border rounded-md py-6 px-[57px] gap-4 flex flex-col items-center justify-center max-w-[170px] max-h-[145px] mb-[70px] hover:bg-red_1-red1 transition-all duration-200 ease-in hover:text-white_1-white  ">
+                                        <img src={item.logo} alt="" />
+                                        <h1 className='font-normal text-base font-p'>{item.name}</h1>
+                                    </div>
+                                </NavLink>
+                            </SwiperSlide>
+                        ))
+                    }
+                        </Swiper>
+
+                </div>
+            </div>
+        </>
+    )
 }
 
 export default Categroy

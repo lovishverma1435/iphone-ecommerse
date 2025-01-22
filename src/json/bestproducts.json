@@ -1,0 +1,90 @@
+[
+    {
+        "image":"frame605.png",
+        "name":"The north coat",
+        "offprice":"$120",
+        "price":"$160",
+        "rating":"five-star.svg",
+        "discount":"-40%",
+        "heart":"heartsmall.svg",
+        "view":"QuickView.svg",
+        "viewer":"(88)"
+    },
+    {
+        "image":"frame606.png",
+        "name":"Gucci duffle bag",
+        "offprice":"$960",
+        "price":"$1160",
+        "rating":"four-star.png",
+        "discount":"-35%",
+        "heart":"heartsmall.svg",
+        "view":"QuickView.svg",
+        "viewer":"(79)"
+    },
+    {
+        "image":"frame607.png",
+        "name":"RGB liquid CPU Cooler",
+        "offprice":"$370",
+        "price":"$400",
+        "rating":"five-star.svg",
+        "discount":"-30%",
+        "heart":"heartsmall.svg",
+        "view":"QuickView.svg",
+        "viewer":"(69)"
+    },
+    {
+        "image":"frame608.png",
+        "name":"Small BookSelf",
+        "offprice":"$375",
+        "price":"$400",
+        "rating":"four-star.png",
+        "discount":"-25%",
+        "heart":"heartsmall.svg",
+        "view":"QuickView.svg",
+        "viewer":"(99)"
+    },
+    {
+        "image":"frame605.png",
+        "name":"The north coat",
+        "offprice":"$120",
+        "price":"$160",
+        "rating":"five-star.svg",
+        "discount":"-40%",
+        "heart":"heartsmall.svg",
+        "view":"QuickView.svg",
+        "viewer":"(88)"
+    },
+    {
+        "image":"frame606.png",
+        "name":"Gucci duffle bag",
+        "offprice":"$960",
+        "price":"$1160",
+        "rating":"four-star.png",
+        "discount":"-35%",
+        "heart":"heartsmall.svg",
+        "view":"QuickView.svg",
+        "viewer":"(79)"
+    },
+    {
+        "image":"frame607.png",
+        "name":"RGB liquid CPU Cooler",
+        "offprice":"$370",
+        "price":"$400",
+        "rating":"five-star.svg",
+        "discount":"-30%",
+        "heart":"heartsmall.svg",
+        "view":"QuickView.svg",
+        "viewer":"(69)"
+    },
+    {
+        "image":"frame608.png",
+        "name":"Small BookSelf",
+        "offprice":"$375",
+        "price":"$400",
+        "rating":"four-star.png",
+        "discount":"-25%",
+        "heart":"heartsmall.svg",
+        "view":"QuickView.svg",
+        "viewer":"(99)"
+    }
+]
