@@ -1,0 +1,74 @@
+[
+    {
+        "image": "food.png",
+        "name": "Breed Dry Dog Food",
+        "price": "$300",
+        "ratting": "five-star.svg",
+        "review": "(80)",
+        "view": "QuickView.svg",
+        "wishlist": "Wishlist.svg"
+    },
+    {
+        "image": "camera.png",
+        "name": "CANON EOS DSLR Camera",
+        "price": "$370",
+        "ratting": "five-star.svg",
+        "review": "(58)",
+        "view": "QuickView.svg",
+        "wishlist": "Wishlist.svg"
+    },
+    {
+        "image": "laptop.png",
+        "name": "ASUS FHD Gaming Laptop",
+        "price": "$840",
+        "ratting": "five-star.svg",
+        "review": "(85)",
+        "view": "QuickView.svg",
+        "wishlist": "Wishlist.svg"
+    },
+    {
+        "image": "creamss.png",
+        "name": "Curology Product Set ",
+        "price": "$580",
+        "ratting": "five-star.svg",
+        "review": "(58)",
+        "view": "QuickView.svg",
+        "wishlist": "Wishlist.svg"
+    },
+    {
+        "image": "toycar.png",
+        "name": "Kids Electric Car",
+        "price": "$560",
+        "ratting": "five-star.svg",
+        "review": "(64)",
+        "view": "QuickView.svg",
+        "wishlist": "Wishlist.svg"
+    },
+    {
+        "image": "shoes.png",
+        "name": "Jr. Zoom Soccer Cleats",
+        "price": "$500",
+        "ratting": "five-star.svg",
+        "review": "(60)",
+        "view": "QuickView.svg",
+        "wishlist": "Wishlist.svg"
+    },
+    {
+        "image": "gamepad.png",
+        "name": "GP11 Shooter USB Gamepad",
+        "price": "$700",
+        "ratting": "five-star.svg",
+        "review": "(88)",
+        "view": "QuickView.svg",
+        "wishlist": "Wishlist.svg"
+    },
+    {
+        "image": "jacket.png",
+        "name": "Quilted Satin Jacket",
+        "price": "$1100",
+        "ratting": "five-star.svg",
+        "review": "(60)",
+        "view": "QuickView.svg",
+        "wishlist": "Wishlist.svg"
+    }
+]

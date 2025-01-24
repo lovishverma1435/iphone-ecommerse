@@ -1,26 +1,30 @@
-[
-  
+[{
+    "categorydata":{
+        "woman":{
+            "name":"Woman's Fashion",
+            "img":"src/assets/logo/DropDown.svg"
+        },
+        "man":{
+            "name":"Men's Fashion",
+            "img":"src/assets/logo/DropDown.svg"
+        }
 
-    {
-        "name":"Electronics"
     },
-    {
-        "name":"Home & Lifestyles"
-    },
-    {
-        "name":"Medicine"
-    },
-    {
-        "name":"Sports & Outdoors"
-    },
-    {
-        "name":"Baby's & Toys"
-    },
-    {
-        "name":"Groceries & Pets"
-    },
-    {
-        "name":"Health & Beauty"
-    }
-
-]
+    "links":[
+        {
+            "name":"Electronics"
+        },{
+            "name":"Home & Lifestyle"
+        },{
+            "name":"Medicine"
+        },{
+            "name":"Sports & Outdoor"
+        },{
+            "name":"Baby’s & Toys"
+        },{
+            "name":"Groceries & Pets"
+        },{
+            "name":"Health & Beauty"
+        }
+    ]
+}]

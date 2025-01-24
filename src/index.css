@@ -43,6 +43,9 @@
     color: #FAFAFA;
     font-weight: 400;
   }
+  .swiper-pagination-bullet-active{
+    border: 1px solid white
+  }
 
 
 

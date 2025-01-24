@@ -1,13 +1,18 @@
 import React from 'react'
 
-const Button = ({ className, Children}) => {
+const Button = ({ className, Children,DivForButton }) => {
 
     return (
-        <>
-        
-            <div className="flex items-center justify-center pt-[73px] pb-[60px] border-b-[2px]">
-                <button className={`bg-red_1-red1 ${className} text-white_1-white font-p font-medium text-base py-4 px-12 rounded-md`}>{Children}</button>
-            </div>
+        <> 
+            {
+               
+                    (<>
+
+                        <div className={`flex ${DivForButton} items-center justify-center pt-[73px] `}>
+                            <button className={`bg-red_1-red1 ${className} text-white_1-white font-p font-medium text-base py-4 px-12 rounded-md hover:shadow-custom-heavy hover:bg-white hover:text-red_1-red1 hover:border-[1px] hover:border-red_1-red1`}>{Children}</button>
+                        </div>
+                    </>)
+            }
         </>
     )
 }

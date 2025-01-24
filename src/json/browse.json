@@ -1,42 +1,42 @@
 [
     {
-        "logo":"../src/assets/CellPhone.svg",
+        "logo":"../src/assets/logo/CellPhone.svg",
         "name":"Phones"
     },
     {
-         "logo":"../src/assets/Computer.svg",
+         "logo":"../src/assets/logo/Computer.svg",
         "name":"computers"
     },
     {
-         "logo":"../src/assets/SmartWatch.svg",
+         "logo":"../src/assets/logo/SmartWatch.svg",
         "name":"SmartWatch"
     },
     {
-         "logo":"../src/assets/Camera1.svg",
+         "logo":"../src/assets/logo/Camera1.svg",
         "name":"Camera"
     },
     {
-         "logo":"../src/assets/HeadPhone.svg",
+         "logo":"../src/assets/logo/HeadPhone.svg",
         "name":"Headphones"
     },
     {
-         "logo":"../src/assets/Gamepad.svg",
+         "logo":"../src/assets/logo/Gamepad.svg",
         "name":"Gaming"
     },
     {
-         "logo":"../src/assets/CellPhone.svg",
+         "logo":"../src/assets/logo/CellPhone.svg",
         "name":"Phones"
     },
     {
-         "logo":"../src/assets/Computer.svg",
+         "logo":"../src/assets/logo/Computer.svg",
         "name":"computers"
     },
     {
-         "logo":"../src/assets/SmartWatch.svg",
+         "logo":"../src/assets/logo/SmartWatch.svg",
         "name":"SmartWatch"
     },
     {
-         "logo":"../src/assets/Camera1.svg",
+         "logo":"../src/assets/logo/Camera1.svg",
         "name":"Camera"
     }
 ]

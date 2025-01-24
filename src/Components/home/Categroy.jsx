@@ -1,8 +1,8 @@
 import React from 'react'
 import { useRef } from 'react';
 import browse from '../../json/browse.json'
-import leftarrow from '../../assets/images/arrow-left.svg'
-import rightarrow from '../../assets/images/arrow-right.svg'
+import leftarrow from '../../assets/logo/arrow-left.svg'
+import rightarrow from '../../assets/logo/arrow-right.svg'
 import { NavLink } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -14,8 +14,8 @@ const Categroy = () => {
     const swiperRef = useRef();
 
     return (
-        <>
-            <div className="container border-b">
+        <section className='container border-b border-t mb-[70px] mt-[60px]'>
+            <div className=" ">
                 <div className="flex items-center gap-4 mt-20">
                     <div className="bg-red_1-red1 w-5 h-10 rounded-md"></div>
                     <div className="text-red_1-red1 font-p font-semibold">Categories</div>
@@ -62,7 +62,7 @@ const Categroy = () => {
 
                 </div>
             </div>
-        </>
+        </section>
     )
 }
 
