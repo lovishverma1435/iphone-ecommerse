@@ -42,9 +42,11 @@
         "ratting": "five-star.svg",
         "review": "(64)",
         "view": "QuickView.svg",
-        "wishlist": "Wishlist.svg"
+        "wishlist": "Wishlist.svg",
+        "topnew":"New"
     },
     {
+
         "image": "shoes.png",
         "name": "Jr. Zoom Soccer Cleats",
         "price": "$500",
@@ -54,15 +56,19 @@
         "wishlist": "Wishlist.svg"
     },
     {
+
         "image": "gamepad.png",
         "name": "GP11 Shooter USB Gamepad",
         "price": "$700",
         "ratting": "five-star.svg",
         "review": "(88)",
         "view": "QuickView.svg",
-        "wishlist": "Wishlist.svg"
+        "wishlist": "Wishlist.svg",
+        "topnew":"New"
+
     },
     {
+
         "image": "jacket.png",
         "name": "Quilted Satin Jacket",
         "price": "$1100",

@@ -2,7 +2,7 @@ import React from 'react'
 import { useRef } from 'react';
 import leftarrow from '../../assets/logo/arrow-left.svg'
 import rightarrow from '../../assets/logo/arrow-right.svg'
-import imagesection from '../../json/bannerimage.json'
+// import imagesection from '../../json/bannerimage.json'
 import { NavLink } from 'react-router-dom'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -20,7 +20,7 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
 
     return (
         <section className='container '>
-            <div className=" ">
+            <div className="">
                 <div className="flex items-center gap-4 ">
                     <div className="bg-red_1-red1 w-5 h-10 rounded-md"></div>
                     <div className="text-red_1-red1 font-p font-semibold capitalize">{info}</div>
@@ -62,7 +62,7 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                     </>)}
                 </div>
             </div>
-            <div className="imagesection container  mt-10">
+            <div className="imagesection  mt-10">
 
                 <Swiper slidesPerView={4}
                     spaceBetween={30}

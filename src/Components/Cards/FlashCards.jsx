@@ -9,14 +9,14 @@ const FlashCards = ({ image, discount, heart, view, name, offprice, price, ratin
                 { discount !== undefined &&<div className={`flex absolute top-3 left-3 w-[55px] h-[26px] bg-red_1-red1 items-center justify-center rounded-md ${RedWithDisscount}`}>            
                         <h4 className='text-[#FAFAFA] font-normal font-p text-xs '>{discount}</h4>
                 </div>}
-                <div className="flex absolute top-3 right-3">
-                    <img src={`/src/assets/logo/${heart}`} alt="heart" />
+                <div className="flex items-center justify-center absolute top-3 right-3 w-[34px] h-[34px] rounded-[50%] bg-white_1-white">
+                    <img className='w-6 h-6' src={`/src/assets/logo/${heart}`} alt="heart" />
                 </div>
-                <div className="flex absolute top-[54px] right-3">
-                    <img src={`/src/assets/logo/${view}`} alt="" />
+                <div className="flex items-center justify-center absolute top-[54px] right-3 w-[34px] h-[34px] rounded-[50%] bg-white_1-white">
+                    <img className='w-6 h-6' src={`/src/assets/logo/${view}`} alt="" />
                 </div>
             </div>
-            <div className="pt-4">
+            <div className="pt-4 ">
                 <h1 className='font-p font-medium text-base max-w-[200px] truncate capitalize'>{name}</h1>
                 <div className="flex gap-2 py-2">
                     <h1 className='text-red_1-red1 font-p font-medium text-base'>{offprice}</h1>
