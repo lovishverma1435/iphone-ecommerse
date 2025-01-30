@@ -43,7 +43,8 @@
         "review": "(64)",
         "view": "QuickView.svg",
         "wishlist": "Wishlist.svg",
-        "topnew":"New"
+        "topnew":"New",
+        "colors":["#FB1314", "#DB4444"]
     },
     {
 
@@ -53,7 +54,8 @@
         "ratting": "five-star.svg",
         "review": "(60)",
         "view": "QuickView.svg",
-        "wishlist": "Wishlist.svg"
+        "wishlist": "Wishlist.svg",
+        "colors":[ "#EEFF61","#DB4444"]
     },
     {
 
@@ -64,7 +66,8 @@
         "review": "(88)",
         "view": "QuickView.svg",
         "wishlist": "Wishlist.svg",
-        "topnew":"New"
+        "topnew":"New",
+        "colors":["#000000", "#DB4444"]
 
     },
     {
@@ -75,6 +78,7 @@
         "ratting": "five-star.svg",
         "review": "(60)",
         "view": "QuickView.svg",
-        "wishlist": "Wishlist.svg"
+        "wishlist": "Wishlist.svg",
+        "colors":["#000000", "#DB4444"]
     }
 ]

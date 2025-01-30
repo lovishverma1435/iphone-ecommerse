@@ -28,8 +28,8 @@ const NewArrival = () => {
                             <div className="bg-black_2-black pl-[138px] pb-[2px] relative rounded-[4px]">
                                 <div className="bg-[url('src/assets/images/woman.png')]  bg-cover w-[432px] h-[284px]">
                                     <div className="absolute flex flex-col left-4 w-[255px] bottom-12 gap-4 pb-4">
-                                        <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px]'>Women’s Collections</h2>
-                                        <h6 className='text-white_1-white font-p font-normal text-sm'>Featured woman collections that give you another vibe.</h6>
+                                        <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px] capitalize truncate'>Women’s Collections</h2>
+                                        <h6 className='text-white_1-white font-p font-normal text-sm capitalize truncate'>Featured woman collections that give you another vibe.</h6>
                                     </div>
                                     <button className='text-white_1-white border-b font-p font-medium text-base absolute bottom-6 left-4'>Shop now</button>
                                 </div>
@@ -38,8 +38,8 @@ const NewArrival = () => {
                                 <div className="bg-black_1-black py-[31px] px-[30px] relative rounded-[4px]">
                                     <div className="bg-[url('src/assets/images/speakers.png')] bg-cover w-[210px] h-[222px] ">
                                         <div className=" absolute flex flex-col bottom-12 gap-2 pb-2">
-                                            <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px]'>Speakers</h2>
-                                            <h6 className='text-white_1-white font-p font-normal text-sm'>Amazon wireless speakers </h6>
+                                            <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px] capitalize truncate'>Speakers</h2>
+                                            <h6 className='text-white_1-white font-p font-normal text-sm capitalize truncate'>Amazon wireless speakers </h6>
                                         </div>
                                         <button className='text-white_1-white border-b font-p font-medium text-base absolute bottom-6'>Shop now</button>
                                     </div>
@@ -47,7 +47,7 @@ const NewArrival = () => {
                                 <div className="bg-black_1-black py-[31px] px-[30px] relative rounded-[4px]">
                                     <div className="bg-[url('src/assets/images/perfume.png')] bg-cover w-[210px] h-[222px] ">
                                         <div className=" absolute flex flex-col bottom-12 gap-2 pb-2">
-                                            <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px]'>Perfume</h2>
+                                            <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px] capitalize truncate'>Perfume</h2>
                                             <h6 className='text-white_1-white font-p font-normal text-sm'>GUCCI INTENSE OUD EDP </h6>
                                         </div>
                                         <button className='text-white_1-white border-b font-p font-medium text-base absolute bottom-6'>Shop now</button>
@@ -71,7 +71,7 @@ const NewArrival = () => {
                     <div className="flex flex-col items-center justify-center">
                         <img src="src/assets/logo/Services3.svg" alt="image" />
                         <h2 className='font-p font-semibold text-xl pt-5 pb-2'>MONEY BACK GUARANTEE</h2>
-                        <h6 className='font-p font-normal text-sm'>We reurn money within 30 days</h6>
+                        <h6 className='font-p font-normal text-sm'>We return money within 30 days</h6>
                     </div>
                 </div>
 

@@ -32,7 +32,7 @@ const Footer = () => {
                   LinkNames.map((item, index) => (
                     <div key={index + Date.now() + item}>
                       <NavLink to={item.to}>
-                        <div className="font-normal font-p text-base">{item}</div>
+                        <div className="font-normal font-p text-base capitalize truncate">{item}</div>
                       </NavLink>
                     </div>
                   ))
@@ -48,7 +48,7 @@ const Footer = () => {
                   LinkNames1.map((item, index) => (
                     <div key={index + Date.now() + item}>
                       <NavLink to={item.to}>
-                        <div className="font-normal font-p text-base">{item}</div>
+                        <div className="font-normal font-p text-base capitalize truncate">{item}</div>
                       </NavLink>
                     </div>
                   ))
@@ -65,7 +65,7 @@ const Footer = () => {
                   LinkNames2.map((item, index) => (
                     <div key={index + Date.now() + item}>
                       <NavLink to={item.to}>
-                       <div className="font-normal font-p text-base">{item}</div>
+                       <div className="font-normal font-p text-base capitalize truncate">{item}</div>
                       </NavLink>
                     </div>
                   ))

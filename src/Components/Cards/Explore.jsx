@@ -1,12 +1,10 @@
 import React, { Fragment, useState } from 'react'
 
-const Explore = ({ image, wishlist, view, name, price, ratting, review, colgroup, topnew }) => {
+const Explore = ({ image, wishlist, view, name, price, ratting, review, topnew, colors }) => {
     const [isborder, setIsborder] = useState(0);
 
     return (
         <>
-
-
             <div className="bg-[#F5F5F5] group rounded-md relative w-[270px] ">
                 <img className='relative  hover:scale-90 py-[35px] px-10  transition-all duration-300 ' src={`/src/assets/images/${image}`} alt="image" />
                 <h2 className="flex items-center justify-center h-0 transition-all duration-300 bg-black w-[270px] rounded-b-md absolute bottom-0 font-p font-medium  text-base text-white truncate capitalize group-hover:h-[41px] ">Add To Cart</h2>
@@ -28,20 +26,25 @@ const Explore = ({ image, wishlist, view, name, price, ratting, review, colgroup
                     <h4 className='font-p text-sm font-semibold text-[#000000] opacity-[50%]'>{review}</h4>
                 </div>
             </div>
-            <div className="flex gap-1 pt-2">
-                {colgroup.map((item, index) => (
-                    <Fragment key={index}>
-                        <div
-                            className={`flex items-center justify-center rounded-full border-[2px] ${isborder === index ? " border-black" : " border-transparent "
-                                }`}>
-                            <button
-                                onClick={() => setIsborder(index)}
-                                className={`w-4 h-4 m-[2px] rounded-full bg-[${item}] `}
-                            ></button>
-                        </div>
-                    </Fragment>
-                ))}
-            </div>
+            {
+                colors &&
+                <div className="flex gap-1 pt-2">
+                    {colors.map((item, index) => (
+                        <Fragment key={index}>
+                            <div
+                                className={`flex items-center w-5 h-5 justify-center  rounded-full border-[2px] ${isborder === index ? " border-black" : " border-transparent "
+                                    }  `}>
+                                <button
+                                    style={{ background: item }}
+                                    onClick={() => setIsborder(index)}
+                                    className={`${isborder === index ? "w-3 h-3" : "h-4 w-4 "}  rounded-full bg-[${item}]`}
+                                ></button>
+                            </div>
+                        </Fragment>
+                    ))}
+                </div>
+            }
+
         </>
     )
 }

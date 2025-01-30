@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import leftarrow from '../../assets/logo/arrow-left.svg'
 import rightarrow from '../../assets/logo/arrow-right.svg'
 // import imagesection from '../../json/bannerimage.json'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -86,7 +86,9 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                     }
                 </Swiper>
                 {showbutton && (<>
-                    <Button Children={"View All Product"} />
+                    <Link to={"/products"}>
+                        <Button Children={"View All Product"} />
+                    </Link>
                 </>)}
             </div>
         </section>

@@ -6,6 +6,7 @@ import Header from './Components/Common/Header'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import SignUp from './pages/SignUp'
+import Products from './pages/Products'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/signUp' element={<SignUp />} />
+          <Route path='/products' element={<Products />} />
         </Routes>
         <Footer />
       </BrowserRouter>

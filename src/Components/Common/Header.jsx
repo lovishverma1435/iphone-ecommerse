@@ -52,7 +52,7 @@ const Header = () => {
 
             <div className="flex items-center justify-end gap-[24px]">
               <div className="flex items-center justify-center bg-[#F5F5F5]  p-[7px_12px] gap-[34px] text-sm text-[#000000] opacity-50 hover:text-red_1-red1 transition-all duration-200 group">
-                <h5>What are you looking for?</h5>
+                <input type='text' placeholder='What are you looking for?' className='outline-none bg-[#F5F5F5]'/>
                 <img className='group-hover:text-red_1-red1 cursor-pointer' src={image} />
               </div>
               <div className="flex items-center justify-center gap-4 cursor-pointer">
