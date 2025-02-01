@@ -2,11 +2,14 @@
     "categorydata":{
         "woman":{
             "name":"Woman's Fashion",
-            "img":"src/assets/logo/DropDown.svg"
+            "img":"src/assets/logo/DropDown.svg",
+            "tags":["Tops","Shirts","jeans","pents"]
         },
         "man":{
             "name":"Men's Fashion",
-            "img":"src/assets/logo/DropDown.svg"
+            "img":"src/assets/logo/DropDown.svg",
+            "tags":["Caps","Shirts","jeans","pents"]
+
         }
 
     },

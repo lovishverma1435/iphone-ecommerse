@@ -1,0 +1,17 @@
+[
+    {
+        "image":"Services.svg",
+        "title":"FREE AND FAST DELIVERY",
+        "detail":"Free delivery for all orders over $140"
+    },
+    {
+        "image":"Services2.svg",
+        "title":"24/7 CUSTOMER SERVICE",
+        "detail":"Friendly 24/7 customer support"
+    },
+    {
+        "image":"Services3.svg",
+        "title":"MONEY BACK GUARANTEE",
+        "detail":"We return money within 30 days"
+    }
+]

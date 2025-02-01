@@ -8,45 +8,25 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
+import Dropdown from '../DropDown'
+const data = categoryLink.map((item, index) => item.categorydata.woman.tags);
+const mensdata = categoryLink.map((item, index) => item.categorydata.man.tags);
+
 function BannerSec() {
-
-    const [arrow, arrowdown] = useState(false)
-    const [set, setarrow] = useState(false)
     const LinkNames = categoryLink[0].links.map((link) => link.name)
-
-
     return (
 
         <section className='mb-[127px]'>
             <div className="container flex ">
                 <div className='flex w-[217px]  overflow-hidden flex-col  categoryLink pt-10 transform mr-4'>
+                    <Dropdown items={data} label="Woman’s Fashion" />
+                    <Dropdown items={mensdata} label="Men’s Fashion" />
+
                     {
                         categoryLink.map((item, index) => (
                             <div key={index} className='mb-4'>
                                 <NavLink to={item.to} className="font-p flex items-center justify-between group cursor-pointer w-[217px] leading-6 text-base font-normal ">
-
                                     <div className=" w-[217px] flex flex-col">
-
-                                        <button className=" flex  justify-between  pb-3 font-p leading-6 text-base font-normal  hover:text-red_1-red1"> {item.categorydata.woman.name}<img src={item.categorydata.woman.img} onClick={() => arrowdown(!arrow)} className={`transition-all duration-200 ${arrow && "rotate-90"}`} alt="" /></button>
-                                        <ul className={`list-disc relative transition-all duration-300 ${arrow ? "opacity-100 h-[125px] z-10 " : "h-0 -z-50 opacity-0"}`}>
-                                            {
-                                                ["Tops", "Shoes", "Cap", "Shirts"].map((item, index) => (
-                                                    <div key={index}>
-                                                        <li className='ml-[25px] font-p pb-2'>{item}</li>
-                                                    </div>
-                                                ))
-                                            }
-                                        </ul>
-                                        <button className=" flex  justify-between  pb-3 font-p leading-6 text-base font-normal hover:text-red_1-red1">{item.categorydata.man.name}<img src={item.categorydata.man.img} onClick={() => setarrow(!set)} className={`transition-all duration-200 ${set && "rotate-90"}`} alt="gfd" /></button>
-                                        <ul className={`list-disc relative transition-all duration-300 ${set ? "opacity-100 h-[125px] z-10 " : "h-0 -z-50 opacity-0"}`}>
-                                            {
-                                                ["Tops", "Shoes", "Cap", "Shirts"].map((item, index) => (
-                                                    <div key={index}>
-                                                        <li className='ml-[25px] font-p pb-2'>{item}</li>
-                                                    </div>
-                                                ))
-                                            }
-                                        </ul>
                                         {
                                             LinkNames.map((item, index) => {
                                                 return (
@@ -57,8 +37,6 @@ function BannerSec() {
                                             })
                                         }
                                     </div>
-
-
                                 </NavLink>
 
                             </div>
