@@ -28,8 +28,9 @@ const ExploreProducts = ({ data }) => {
                             ))
                         }</div>
 
-                    <Button Children={"View All Products"} />
                 </div>
+                    <Button Children={"View All Products"} />
+                    
             </section>
         </>
     )

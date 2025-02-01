@@ -4,17 +4,12 @@ import leftarrow from '../../assets/logo/arrow-left.svg'
 import rightarrow from '../../assets/logo/arrow-right.svg'
 // import imagesection from '../../json/bannerimage.json'
 import { Link, NavLink } from 'react-router-dom'
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Navigation } from 'swiper/modules';
 import Button from '../ui/Button';
 import FlashCards from '../Cards/FlashCards';
-
-// import './styles.css';
 const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
     const swiperRef = useRef();
 
@@ -62,7 +57,7 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                     </>)}
                 </div>
             </div>
-            <div className="imagesection  mt-10">
+            <div className="imagesection pb-[73px]  mt-10">
 
                 <Swiper slidesPerView={4}
                     spaceBetween={30}
@@ -85,12 +80,12 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                         ))
                     }
                 </Swiper>
+            </div>
                 {showbutton && (<>
                     <Link to={"/products"}>
                         <Button Children={"View All Product"} />
                     </Link>
                 </>)}
-            </div>
         </section>
 
     )

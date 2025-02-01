@@ -8,6 +8,7 @@ import bestdata from "../json/bestproducts.json"
 import ExploreProducts from '../Components/home/ExploreProducts'
 import NewArrival from '../Components/home/NewArrival'
 import exploreprod from '../json/explore.json'
+
 const Home = () => {
   return (
     <>
