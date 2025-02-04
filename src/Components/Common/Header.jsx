@@ -10,6 +10,8 @@ import bagimg from '../../assets/logo/icon-mallbag.svg'
 import cancelimg from '../../assets/logo/icon-cancel.svg'
 import reviewimg from '../../assets/logo/icon-Reviews.svg'
 import logoutimg from '../../assets/logo/icon-logout.svg'
+import wishListJson from "../../json/wishlist.json"
+import CartListJson from '../../json/shoppingcart.json'
 const Header = () => {
   const [rotate, setRotate] = useState(false)
 
@@ -56,14 +58,14 @@ const Header = () => {
               <img className='group-hover:text-red_1-red1 cursor-pointer' src={image} />
             </div>
             <div className="flex items-center justify-center gap-4 cursor-pointer">
-              <Link to={"/wishlist"}>
-                <button>
-                  <img src={image1} />
-                </button>
+              <Link to={"/wishlist"} className='relative'>
+                <img src={image1} />
+                <span className='absolute flex items-center justify-center -top-1 -right-1 w-4 h-4 text-xs leading-[18px] font-normal font-p  text-center bg-red_1-red1 text-white rounded-full'>{wishListJson?.length}</span>
               </Link>
-              <button>
-              <img src={image2} />
-              </button>
+              <Link to={"/cart"} className='relative'>
+                <img src={image2} />
+                <span className='absolute flex items-center justify-center -top-2 -right-1 w-4 h-4 text-xs font-normal font-p text-center bg-red_1-red1 text-white_1-white rounded-full'>{CartListJson?.length}</span>
+                </Link>
               <button onClick={() => setRotate(!rotate)} className={`transition-all duration-200 relative group${rotate && ""}`}>
                 {
                   !rotate && <img src={"/src/assets/logo/userprofile.svg"} />

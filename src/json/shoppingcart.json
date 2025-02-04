@@ -1,0 +1,12 @@
+[
+    {
+        "image":"MonitorCartSmall.svg",
+        "name":"LCD Monitor",
+        "price":"$560"
+    },
+    {
+        "image":"GamepadCartSmall.svg",
+        "name":"H1 Gamepad",
+        "price":"$650"
+    }
+]

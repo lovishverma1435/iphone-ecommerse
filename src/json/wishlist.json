@@ -2,27 +2,27 @@
     {
         "image":"frame606.png",
         "discount":"-35%",
-        "delete":"delete.svg",
+        "deleted":"delete.svg",
         "heading":"Gucci duffle bag",
         "price":"$960",
         "offprice":"$1160"
     },
     {
         "image":"frame607.png",
-        "delete":"delete.svg",
+        "deleted":"delete.svg",
         "heading":"Gucci duffle bag",
-        "price":"$960"
+        "price":"$760"
     },
     {
         "image":"gamepad.png",
-        "delete":"delete.svg",
+        "deleted":"delete.svg",
         "heading":"Gucci duffle bag",
-        "price":"$960"
+        "price":"$680"
     },
     {
         "image":"jacket.png",
-        "delete":"delete.svg",
+        "deleted":"delete.svg",
         "heading":"Gucci duffle bag",
-        "price":"$960"
+        "price":"$650"
     }
 ]

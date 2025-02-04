@@ -8,7 +8,9 @@ import Contact from './pages/Contact'
 import SignUp from './pages/SignUp'
 import Products from './pages/Products'
 import LoginFile from './pages/LoginFile'
-import Wishlist from './Components/Cards/Wishlist'
+import Wishlistproducts from './pages/Wishlistproducts'
+import CartList from './pages/Cart'
+
 
 const App = () => {
   return (
@@ -22,7 +24,8 @@ const App = () => {
           <Route path='/signUp' element={<SignUp />} />
           <Route path='/products' element={<Products />} />
           <Route path='/login' element={<LoginFile />} />
-          <Route path='/wishlist' element={<Wishlist/>} />
+          <Route path='/wishlist' element={<Wishlistproducts/>} />
+          <Route path='/cart' element={<CartList/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

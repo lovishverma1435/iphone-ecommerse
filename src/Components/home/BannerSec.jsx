@@ -12,6 +12,8 @@ import Dropdown from '../DropDown'
 const data = categoryLink.map((item, index) => item.categorydata.woman.tags);
 const mensdata = categoryLink.map((item, index) => item.categorydata.man.tags);
 
+
+
 function BannerSec() {
     const LinkNames = categoryLink[0].links.map((link) => link.name)
     return (

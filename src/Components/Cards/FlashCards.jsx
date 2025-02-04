@@ -6,8 +6,8 @@ const FlashCards = ({ image, discount, heart, view, name, offprice, price, ratin
             <div className="bg-[#F5F5F5] group rounded-md relative">
                 <img className='relative hover:scale-90   transition-all duration-300 py-[35px] px-10' src={`/src/assets/images/${image}`} alt="image" />
                 <h2 className="flex items-center justify-center h-0 transition-all duration-300 bg-black w-[270px] rounded-b-md absolute bottom-0 font-p font-medium  text-base text-white truncate capitalize group-hover:h-[41px] ">Add To Cart</h2>
-                { discount !== undefined &&<div className={`flex absolute top-3 left-3 w-[55px] h-[26px] bg-red_1-red1 items-center justify-center rounded-md ${RedWithDisscount}`}>            
-                        <h4 className='text-[#FAFAFA] font-normal font-p text-xs '>{discount}</h4>
+                { discount !== undefined &&<div className={`flex absolute top-3 left-3  bg-red_1-red1 items-center justify-center rounded-md ${RedWithDisscount}`}>            
+                        <h4 className='text-white_1-white font-normal font-p text-xs py-1 px-3'>{discount}</h4>
                 </div>}
                 <div className="flex items-center justify-center absolute top-3 right-3 w-[34px] h-[34px] rounded-[50%] bg-white_1-white">
                     <img className='w-6 h-6' src={`/src/assets/logo/${heart}`} alt="heart" />
