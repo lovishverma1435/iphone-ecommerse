@@ -18,9 +18,9 @@ const Wishlistproducts = () => {
                                 <h3 className='font-p font-normal text-xl'>Wishlist ({jsonmap.length})</h3>
                             
                         </div>
-                        <Button className={"bg-gray-100 text-black_1-black hover:border-black_1-black hover:text-black_1-black"} Children={"Move All To Bag"} />
+                        <Button className={"shadow-custom"} varient={"white"} Children={"Move All To Bag"} />
                     </div>
-                    <div className='flex gap-[30px] items-center justify-center'>
+                    <div className='flex  gap-[30px] items-center justify-center'>
                         {
                             WishlistCard.map((item, index) => (
                                 <div key={index}>
@@ -40,7 +40,7 @@ const Wishlistproducts = () => {
                                 <h3 className='font-p font-normal text-xl'>Just For You</h3>
                             
                         </div>
-                        <Button className={"bg-gray-100 w-[152px] border-black_1-black text-black_1-black hover:border-black_1-black hover:text-black_1-black"} Children={"See All"} />
+                        <Button className={"shadow-custom"} varient={"white"} Children={"See All"} />
                     </div>
                     <div className='flex gap-[30px] items-center justify-center'>
                         {

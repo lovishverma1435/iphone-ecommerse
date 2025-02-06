@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 import { Navigation } from 'swiper/modules';
 import Button from '../ui/Button';
 import FlashCards from '../Cards/FlashCards';
+import CountdownTimer from '../CountdownTimer'
 const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
     const swiperRef = useRef();
 
@@ -24,24 +25,9 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                     <div className="pt-6 flex max-w-[600px] justify-between items-end w-full ">
                         <h1 className='text-4xl font-semibold font-i tracking-wide capitalize'>{title}</h1>
                         {time && (<>
-                            <ul className='flex'>
-                                <li className='flex flex-col font-medium text-xs font-p pb-1'>Days <span className='text-4xl font-bold tracking-wide'>03</span> </li>
-                                <ul className='flex flex-col gap-1 mt-8 px-[17px]'>
-                                    <li className='h-1 w-1 rounded-2xl bg-red_2-lightred'></li>
-                                    <li className='h-1 w-1 rounded-2xl bg-red_2-lightred'></li>
-                                </ul>
-                                <li className='flex flex-col font-medium text-xs font-p pb-1'>hours <span className='text-4xl font-bold tracking-wide'>23</span></li>
-                                <ul className='flex flex-col gap-1 mt-8 px-[17px]'>
-                                    <li className='h-1 w-1 rounded-2xl bg-red_2-lightred'></li>
-                                    <li className='h-1 w-1 rounded-2xl bg-red_2-lightred'></li>
-                                </ul>
-                                <li className='flex flex-col font-medium text-xs font-p pb-1'>Minutes <span className='text-4xl font-bold tracking-wide'>19</span></li>
-                                <ul className='flex flex-col gap-1 mt-8 px-[17px]'>
-                                    <li className='h-1 w-1 rounded-2xl bg-red_2-lightred'></li>
-                                    <li className='h-1 w-1 rounded-2xl bg-red_2-lightred'></li>
-                                </ul>
-                                <li className='flex flex-col font-medium text-xs font-p pb-1'>Seconds <span className='text-4xl font-bold tracking-wide'>56</span></li>
-                            </ul></>)}
+                            <CountdownTimer targetDate="2025-02-20" />
+                        </>)}
+
                     </div>
                     {arrow === "set" ? <Button className={""} Children={"View All"} /> : (<>
                         <div className="flex items-center justify-end gap-[19px] ">
@@ -81,11 +67,11 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                     }
                 </Swiper>
             </div>
-                {showbutton && (<>
-                    <Link to={"/products"}>
-                        <Button Children={"View All Product"} />
-                    </Link>
-                </>)}
+            {showbutton && (<>
+                <Link to={"/products"}>
+                    <Button Children={"View All Product"} />
+                </Link>
+            </>)}
         </section>
 
     )

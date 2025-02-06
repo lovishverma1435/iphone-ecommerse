@@ -4,9 +4,9 @@ const Button = ({ className, Children,DivForButton,varient }) => {
 
     return (
         <> 
-            { varient === white ? (<>
+            { varient === "white" ? (<>
                 <div className={`flex ${DivForButton} items-center justify-center  `}>
-                            <button className={`bg-gray_2-gray ${className} border-[1px] border-black_1-black text-white_1-white font-p font-medium text-base py-4 px-12 rounded-md  hover:bg-white hover:text-black_1-black hover:border-black_1-black`}>{Children}</button>
+                            <button className={`bg-gray_2-gray ${className} border-[1px] border-black_1-black text-black_1-black font-p font-medium text-base py-4 px-12 rounded-md  hover:bg-black_1-black hover:text-white_1-white hover:border-black_1-black`}>{Children}</button>
                         </div>
             </>):
                

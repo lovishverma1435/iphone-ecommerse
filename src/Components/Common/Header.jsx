@@ -67,6 +67,7 @@ const Header = () => {
                 <span className='absolute flex items-center justify-center -top-2 -right-1 w-4 h-4 text-xs font-normal font-p text-center bg-red_1-red1 text-white_1-white rounded-full'>{CartListJson?.length}</span>
                 </Link>
               <button onClick={() => setRotate(!rotate)} className={`transition-all duration-200 relative group${rotate && ""}`}>
+                
                 {
                   !rotate && <img src={"/src/assets/logo/userprofile.svg"} />
                 }
@@ -74,13 +75,18 @@ const Header = () => {
                   rotate && <img src={"/src/assets/logo/userred.svg"} alt="" />
                 }
 
-                {rotate && <ul className='absolute flex flex-col gap-[13px] py-2 px-4 backdrop-blur-3xl text-white z-10 transition-all duration-200 ease-in right-0 rounded-md w-[224px]'>
+                {
+                  rotate &&
+                <ul className='absolute flex flex-col gap-[13px] py-2 px-4 bg-black_1-black bg-opacity-35 text-white z-10 transition-all duration-200 ease-in right-0 rounded-md w-[224px] '>
+                  <Link to={"/account"}>
                   <li className='bar-popup font-p'><img src={image4} alt="img" />Manage My Account</li>
+                  </Link>
                   <li className='bar-popup font-p'><img src={bagimg} alt="img" />My Order</li>
                   <li className='bar-popup font-p'><img src={cancelimg} alt="img" />My cancellations</li>
                   <li className='bar-popup font-p'><img src={reviewimg} alt="img" />My reviews</li>
                   <li className='bar-popup font-p'><img src={logoutimg} alt="img" />LogOut</li>
-                </ul>}
+                </ul>
+                } 
               </button>
             </div>
           </div>

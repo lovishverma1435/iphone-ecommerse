@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import CartProducts from '../json/shoppingcart.json'
+import CartProducts from '../../json/shoppingcart.json'
 import { Link, NavLink } from 'react-router-dom'
-import cross from "../assets/logo/cross.svg"
-import DropUp from "../assets/logo/DropUpSmall.svg"
-import DropDown from "../assets/logo/DropDownSmall.svg"
-import Button from '../Components/ui/Button'
+import cross from "../../assets/logo/cross.svg"
+import DropUp from "../../assets/logo/DropUpSmall.svg"
+import DropDown from "../../assets/logo/DropDownSmall.svg"
+import Button from '../ui/Button'
 const Cart = () => {
     const [count, setcount] = useState({})
 
@@ -26,8 +26,8 @@ const Cart = () => {
         <>
             <section>
                 <div className="container">
-                    <div className="pt-[181px] pb-10">
-                        <ul className='flex items-center justify-between bg-gray-100 shadow-custom_1 py-6 px-10 rounded'>
+                    <div className="pt-24 pb-10">
+                        <ul className='flex items-center justify-between bg-gray_2-gray shadow-Customnew py-6 px-10 rounded'>
                             <li className='font-p font-normal text-base'>Product</li>
                             <li className='font-p font-normal text-base'>Price</li>
                             <li className='font-p font-normal text-base'>Quantity</li>
@@ -39,9 +39,9 @@ const Cart = () => {
                             CartProducts.map((item, index) => (
                                 <div key={index}>
                                     <NavLink to={item.to}>
-                                        <div className="flex bg-gray_2-gray shadow-custom_1 py-6 px-10 rounded w-[1170px] justify-between">
-                                            <div className="flex gap-[280px]">
-                                                <div className="flex gap-[175px]">
+                                        <div className="flex bg-gray_2-gray shadow-Customnew py-6 px-10 rounded w-[1170px] justify-between">
+                                            <div className="flex gap-[282px]">
+                                                <div className="flex gap-[177px]">
                                                     <div className="relative group flex items-center justify-center gap-5  w-[170px]">
                                                         <img className='' src={`src/assets/logo/${item.image}`} alt="image" />
                                                         <h2 className=' absolute -top-[8px] -left-[8px] bg-red_1-red1 scale-0 group-hover:scale-100 transition-all duration-300 flex p-[6px] rounded-full max-w-5 w-full items-center justify-center text-center opacity-0 group-hover:opacity-100'><img src={cross} alt="" /></h2>
@@ -71,13 +71,13 @@ const Cart = () => {
                         }
                     </div>
                     <div className="flex justify-between pb-20">
-                        <Button className={`bg-gray-100  text-black border-black hover:border-black hover:text-black`} Children={"Return To Shop"} />
-                        <Button className={`bg-gray-100 text-black border-black hover:border-black hover:text-black`} Children={"Update Cart"} />
+                        <Button className={"shadow-custom"} varient={"white"} Children={"Return To Shop"} />
+                        <Button className={"shadow-custom"} varient={"white"} Children={"Update Cart"} />
                     </div>
                     <div className="flex justify-between pb-[140px] items-start">
                         <div className="flex gap-4 ">
-                            <input className='py-4 pr-[164px] pl-6 border-black_1-black' type="text" placeholder='Coupan Code' />
-                            <Button Children={"Apply Coupan"} />
+                            <input className='py-4 px-6 border-black_1-black border rounded w-[330px]' type="email" placeholder='Coupan Code' />
+                            <Button  Children={"Apply Coupan"} />
                         </div>
                         <div className="flex flex-col w-[470px] border-[2px] border-black py-8 px-6 rounded">
                             <h2 className='font-p font-medium text-xl pb-6'>Card Total</h2>
@@ -91,7 +91,7 @@ const Cart = () => {
                             <h2 className='font-p font-normal text-base py-4'>Total:</h2>
                             </div>
                             <Link to={"/checkout"} >
-                            <Button varient={"white"} Children={"Procees to checkout"}/>
+                            <Button  Children={"Procees to checkout"}/>
                             </Link>
                         </div>
                     </div>

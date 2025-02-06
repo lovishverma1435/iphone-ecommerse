@@ -1,0 +1,12 @@
+[
+    {
+        "title":"Bank",
+        "bkash":"Bkash.svg",
+        "visa":"Visa.svg",
+        "mastercard":"Mastercard.svg",
+        "nagad":"Nagad.svg"
+    },
+    {
+        "title":"Cash on delivery"
+    }
+]

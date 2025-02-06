@@ -9,7 +9,10 @@ import SignUp from './pages/SignUp'
 import Products from './pages/Products'
 import LoginFile from './pages/LoginFile'
 import Wishlistproducts from './pages/Wishlistproducts'
-import CartList from './pages/Cart'
+import CartList from './Components/cart/Cart'
+import Checkout from './Components/cart/Checkout'
+import Account from './Components/account/Account'
+import Gamepads from './pages/Gamepad'
 
 
 const App = () => {
@@ -26,6 +29,9 @@ const App = () => {
           <Route path='/login' element={<LoginFile />} />
           <Route path='/wishlist' element={<Wishlistproducts/>} />
           <Route path='/cart' element={<CartList/>}/>
+          <Route path='/checkout' element={<Checkout/>}/>
+          <Route path='/account' element={<Account/>}/>
+          <Route path='/wishlistprod' element={<Gamepads/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

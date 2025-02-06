@@ -1,0 +1,28 @@
+[
+    {
+        "name":"First Name",
+        "id":"type1",
+        "placeholder":"Md",
+        "title":"First Name"
+       
+    },
+    {
+        "name":"Last Name",
+        "id":"type2",
+        "placeholder":"Rimel",
+        "title":"Last Name"
+    },
+    {
+        "name":"Email",
+        "id":"type3",
+        "type":"email",
+        "placeholder":"rimel1111@gmail.com",
+        "title":"Email"
+    },
+    {
+        "name":"Address",
+        "id":"type4",
+        "placeholder":"Kingston, 5236, United State",
+        "title":"Address"
+    }
+]

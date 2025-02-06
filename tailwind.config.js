@@ -43,12 +43,15 @@ export default {
 
   
       },
+      boxShadow:{
+        custom:['4px 4px 15px rgba(0, 0, 0, 0.2)'],
+        Customnew: ['0px 1px 13px 0px #0000000D'],
+       
+      } ,
       dropShadow: {
-        'custom-white': '0 0 100px #ffffff57'
-      },
-      boxshadow:{
-        'custom_1':' rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px'
-      } 
+        'custom-white': '0 0 100px #ffffff57',
+      }
+     
      
     },
   },

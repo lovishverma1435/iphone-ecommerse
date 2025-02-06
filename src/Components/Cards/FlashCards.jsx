@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const FlashCards = ({ image, discount, heart, view, name, offprice, price, rating, viewer, RedWithDisscount }) => {
     return (
@@ -10,7 +11,10 @@ const FlashCards = ({ image, discount, heart, view, name, offprice, price, ratin
                         <h4 className='text-white_1-white font-normal font-p text-xs py-1 px-3'>{discount}</h4>
                 </div>}
                 <div className="flex items-center justify-center absolute top-3 right-3 w-[34px] h-[34px] rounded-[50%] bg-white_1-white">
+                <Link to={"/wishlistprod"}>
                     <img className='w-6 h-6' src={`/src/assets/logo/${heart}`} alt="heart" />
+                    </Link>
+
                 </div>
                 <div className="flex items-center justify-center absolute top-[54px] right-3 w-[34px] h-[34px] rounded-[50%] bg-white_1-white">
                     <img className='w-6 h-6' src={`/src/assets/logo/${view}`} alt="" />

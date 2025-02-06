@@ -1,0 +1,26 @@
+[
+    {
+        "image":"Abouttom.png",
+        "name":"Tom Cruise",
+        "work":"Founder & Chairman",
+        "twitter":"BlackTwitter.svg",
+        "insta":"blackinstagram.svg",
+        "linkedin":"blackLinkedin.svg"
+    },
+    {
+        "image":"Aboutemma.png",
+        "name":"Emma Watson",
+        "work":"Managing Director",
+        "twitter":"BlackTwitter.svg",
+        "insta":"blackinstagram.svg",
+        "linkedin":"blackLinkedin.svg"
+    },
+    {
+        "image":"Aboutwill.png",
+        "name":"Will Smith",
+        "work":"Product Designer",
+        "twitter":"BlackTwitter.svg",
+        "insta":"blackinstagram.svg",
+        "linkedin":"blackLinkedin.svg"
+    }
+]
