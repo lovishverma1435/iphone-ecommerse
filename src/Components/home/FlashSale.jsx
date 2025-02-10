@@ -2,7 +2,6 @@ import React from 'react'
 import { useRef } from 'react';
 import leftarrow from '../../assets/logo/arrow-left.svg'
 import rightarrow from '../../assets/logo/arrow-right.svg'
-// import imagesection from '../../json/bannerimage.json'
 import { Link, NavLink } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -23,11 +22,12 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                 </div>
                 <div className="flex justify-between items-center">
                     <div className="pt-6 flex max-w-[600px] justify-between items-end w-full ">
-                        <h1 className='text-4xl font-semibold font-i tracking-wide capitalize'>{title}</h1>
-                        {time && (<>
-                            <CountdownTimer targetDate="2025-02-20" />
-                        </>)}
-
+                        <h1 className='text-2xl md:text-4xl font-semibold font-i tracking-wide capitalize'>{title}</h1>
+                        <div className="hidden md:block">
+                            {time && (<>
+                                <CountdownTimer targetDate="2025-02-25" />
+                            </>)}
+                        </div>
                     </div>
                     {arrow === "set" ? <Button className={""} Children={"View All"} /> : (<>
                         <div className="flex items-center justify-end gap-[19px] ">
@@ -52,6 +52,14 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                     navigation={true}
                     onBeforeInit={(swiper) => {
                         swiperRef.current = swiper;
+                    }}
+                    breakpoints={{
+                        360 :{
+                            slidesPerView:1,
+                        },
+                        640:{
+                            slidesPerView:2,
+                        }
                     }}
                     className="mySwiper">
                     {

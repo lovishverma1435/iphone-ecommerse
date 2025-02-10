@@ -13,6 +13,7 @@ import CartList from './Components/cart/Cart'
 import Checkout from './Components/cart/Checkout'
 import Account from './Components/account/Account'
 import Gamepads from './pages/Gamepad'
+import Errorpage from './pages/Error'
 
 
 const App = () => {
@@ -27,11 +28,12 @@ const App = () => {
           <Route path='/signUp' element={<SignUp />} />
           <Route path='/products' element={<Products />} />
           <Route path='/login' element={<LoginFile />} />
-          <Route path='/wishlist' element={<Wishlistproducts/>} />
-          <Route path='/cart' element={<CartList/>}/>
-          <Route path='/checkout' element={<Checkout/>}/>
-          <Route path='/account' element={<Account/>}/>
-          <Route path='/wishlistprod' element={<Gamepads/>}/>
+          <Route path='/wishlist' element={<Wishlistproducts />} />
+          <Route path='/cart' element={<CartList />} />
+          <Route path='/checkout' element={<Checkout />} />
+          <Route path='/account' element={<Account />} />
+          <Route path='/wishlistprod' element={<Gamepads />} />
+          <Route path='/error' element={<Errorpage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

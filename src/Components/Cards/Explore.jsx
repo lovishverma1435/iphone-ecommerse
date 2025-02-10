@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Explore = ({ image, wishlist, view, name, price, ratting, review, topnew, colors }) => {
     const [isborder, setIsborder] = useState(0);
@@ -9,7 +10,9 @@ const Explore = ({ image, wishlist, view, name, price, ratting, review, topnew, 
                 <img className='relative  hover:scale-90 py-[35px] px-10  transition-all duration-300 ' src={`/src/assets/images/${image}`} alt="image" />
                 <h2 className="flex items-center justify-center h-0 transition-all duration-300 bg-black w-[270px] rounded-b-md absolute bottom-0 font-p font-medium  text-base text-white truncate capitalize group-hover:h-[41px] ">Add To Cart</h2>
                 <div className="flex items-center justify-center absolute top-3 right-3 bg-white_1-white w-[34px] h-[34px] rounded-[50%]">
-                    <img className='w-6 h-6' src={`/src/assets/logo/${wishlist}`} alt="heart" />
+                    <Link to={"/wishlistprod"}>
+                        <img className='w-6 h-6' src={`/src/assets/logo/${wishlist}`} alt="heart" />
+                    </Link>
                 </div>
                 <div className="flex items-center justify-center absolute top-[54px] right-3 bg-white_1-white w-[34px] h-[34px] rounded-[50%]">
                     <img className='w-6 h-6' src={`/src/assets/logo/${view}`} alt="" />

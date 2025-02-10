@@ -44,13 +44,24 @@ const Categroy = () => {
                         onBeforeInit={(swiper) => {
                             swiperRef.current = swiper;
                         }}
+                        breakpoints={{
+                            1024:{
+                                slidesPerView:5
+                            },
+                            768:{
+                                slidesPerView:4
+                            },
+                            640:{
+                                slidesPerView:3
+                            }
+                        }}
                         className="mySwiper">
 
                     {
                         browse.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <NavLink to={item.to}>
-                                    <div className="border rounded-md py-6 px-[57px] gap-4 flex flex-col items-center justify-center max-w-[170px] max-h-[145px] mb-[70px] hover:bg-red_1-red1 transition-all duration-200 ease-in hover:text-white_1-white  ">
+                                    <div className="border rounded-md py-6 px-[57px] gap-3 lg:gap-4 flex flex-col items-center justify-center max-w-[170px] max-h-[145px] mb-[70px] hover:bg-red_1-red1 transition-all duration-200 ease-in hover:text-white_1-white  ">
                                         <img src={item.logo} alt="" />
                                         <h1 className='font-normal text-base font-p'>{item.name}</h1>
                                     </div>

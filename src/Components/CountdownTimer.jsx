@@ -28,7 +28,7 @@ const CountdownTimer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="text-black flex gap-9  " style={{ textAlign: "center", fontSize: "20px", fontWeight: "bold" }}>
+    <div className="text-black flex gap-9 bg-gray_2-gray rounded py-2 px-4  " style={{ textAlign: "center", fontSize: "20px", fontWeight: "bold" }}>
       <div className="">
       <h2 className="font-p font-medium text-xs">Days</h2>
       <span className=" font-i font-bold text-[32px]">{timeLeft.days} </span>

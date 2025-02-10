@@ -29,7 +29,7 @@ const Dropdown = ({ label, items }) => {
         onInput={(e) => setValue(e.target.value)} 
       /> */}
             <button
-                className="flex  w-full justify-between  pb-3 font-p leading-6 text-base font-normal  hover:text-red_1-red1 capitalize"
+                className="flex w-full justify-between  pb-3 font-p leading-6 text-base font-normal  hover:text-red_1-red1 capitalize"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 {label}
@@ -37,10 +37,10 @@ const Dropdown = ({ label, items }) => {
             </button>
             <div
                 ref={dropdownRef}
-                className="overflow-hidden transition-all duration-300 bg-white"
+                className="flex overflow-hidden transition-all duration-300 bg-white"
                 style={{ height: `${height}px` }}
             >
-                <ul className="py-2 list-disc">
+                <ul className="py-2 list-disc flex">
                     {items?.map((item, index) => (
                   <>
                   {item.map((item,index)=>(
