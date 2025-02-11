@@ -38,10 +38,9 @@ const Header = () => {
       </header>
       <header className='pt-10 pb-4 border-b-2'>
         <div className="container flex lg:flex-row flex-col gap-6 lg:gap-0 items-center justify-between">
-            <h1 className='text-[24px] font-bold cursor-pointer font-i'>Exclusive</h1>
-            
+          <h1 className='flex w-full justify-start lg:text-[24px] font-bold cursor-pointer font-i'>Exclusive</h1>
           <div className="flex gap-6 sm:flex-row lg:gap-0 lg:flex-row flex-col items-center  max-w-[892px] w-full justify-between">
-            <ul className=' flex flex-col sm:flex-row sm:gap-4 lg:flex lg:flex-row items-center justify-between menuLinks font-p lg:w-[367px] '>
+            <ul className=' flex gap-8 justify-start w-full sm:flex-row sm:gap-4 lg:flex lg:flex-row items-center lg:justify-between menuLinks font-p lg:w-[367px] '>
               {
                 menuLinks.map((item, index) => (
                   <li className='inline-block' key={index}>
@@ -54,8 +53,8 @@ const Header = () => {
               <input type='text' placeholder='What are you looking for?' className='outline-none bg-[#F5F5F5]' />
               <img className='group-hover:text-red_1-red1 cursor-pointer' src={image} />
             </div>
-            <div className="flex items-center justify-center gap-4 cursor-pointer">
-            <img className='group-hover:text-red_1-red1 cursor-pointer' src={image} /> 
+            <div className="justify-end w-full flex items-center lg:justify-center gap-4 cursor-pointer">
+              <img className='group-hover:text-red_1-red1 cursor-pointer' src={image} />
               <Link to={"/wishlist"} className='relative'>
                 <img src={image1} />
                 <span className='absolute flex items-center justify-center -top-1 -right-1 w-4 h-4 text-xs leading-[18px] font-normal font-p  text-center bg-red_1-red1 text-white rounded-full'>{wishListJson?.length}</span>

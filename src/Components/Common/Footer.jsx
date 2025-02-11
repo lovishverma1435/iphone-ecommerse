@@ -11,7 +11,7 @@ const Footer = () => {
     <>
       <footer>
         <section className=' bg-black text-white pt-[80px] '>
-          <div className="container flex justify-between pb-[60px]">
+          <div className="container flex flex-col gap-8 sm:flex justify-between pb-[60px]">
             <div className="flex flex-col gap-[16px] max-w-[217px]">
               <div className="  flex flex-col gap-[24px]">
                 <h1 className='font-customfont font-bold text-2xl leading-6 tracking-[0.03em]'>Exclusive</h1>

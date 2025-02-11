@@ -18,9 +18,9 @@ function BannerSec() {
     const LinkNames = categoryLink[0].links.map((link) => link.name)
     return (
 
-        <section className='mb-[127px] container'>
-            <div className=" flex-col sm:flex">
-                <div className='flex sm:flex-col w-[217px]  h-[114px] overflow-auto  lg:h-full categoryLink pt-10 transform mr-4'>
+        <section className='mb-12 lg:mb-[127px] container'>
+            <div className=" flex-col flex sm:flex-row">
+                <div className='flex flex-col sm:flex-col w-[217px]  h-[114px] overflow-auto  lg:h-full categoryLink pt-4 lg:pt-10 transform mr-4'>
                     <Dropdown items={data} label="Woman’s Fashion" />
                     <Dropdown items={mensdata} label="Men’s Fashion" />
                     {

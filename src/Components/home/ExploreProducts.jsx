@@ -17,7 +17,7 @@ const ExploreProducts = ({ data }) => {
                             <h1 className='text-4xl font-semibold font-i tracking-wide capitalize'>Explore Our Products</h1>
                         </div>
                     </div>
-                    <div className="grid grid-cols-4 gap-x-[30px] gap-y-[60px] pt-[60px]">
+                    <div className="grid grid-cols-1 sm:grid  sm:grid-cols-2 lg:grid-cols-4 gap-x-[30px] gap-y-[60px] pt-[60px]">
                         {
                             data.map((item, index) => (
                                 <div key={index + Date.now() + item}>

@@ -14,7 +14,7 @@ const Categroy = () => {
     const swiperRef = useRef();
 
     return (
-        <section className='container border-b border-t mb-[70px] mt-[60px]'>
+        <section className='container border-b border-t mb-6 md:mb-10 lg:mb-[70px] mt-6 md:mt-10 lg:mt-[60px]'>
             <div className=" ">
                 <div className="flex items-center gap-4 mt-20">
                     <div className="bg-red_1-red1 w-5 h-10 rounded-md"></div>
@@ -22,7 +22,7 @@ const Categroy = () => {
                 </div>
                 <div className="flex items-center justify-between">
                     <div className="pt-6 flex items-end">
-                        <h1 className='text-4xl font-semibold font-i tracking-wide'>Browse By Category</h1>
+                        <h1 className='text-2xl lg:text-4xl font-semibold font-i tracking-wide'>Browse By Category</h1>
                     </div>
                     <div className="flex items-center justify-end gap-[19px] ">
                         <div className='flex gap-2'>
@@ -45,14 +45,17 @@ const Categroy = () => {
                             swiperRef.current = swiper;
                         }}
                         breakpoints={{
-                            1024:{
-                                slidesPerView:5
-                            },
-                            768:{
-                                slidesPerView:4
+                            360:{
+                                slidesPerView:2
                             },
                             640:{
+                                slidesPerView:2
+                            },
+                            768:{
                                 slidesPerView:3
+                            },
+                            1024:{
+                                slidesPerView:6
                             }
                         }}
                         className="mySwiper">

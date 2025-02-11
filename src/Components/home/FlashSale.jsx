@@ -20,17 +20,17 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                     <div className="bg-red_1-red1 w-5 h-10 rounded-md"></div>
                     <div className="text-red_1-red1 font-p font-semibold capitalize">{info}</div>
                 </div>
-                <div className="flex justify-between items-center">
-                    <div className="pt-6 flex max-w-[600px] justify-between items-end w-full ">
+                <div className="flex flex-col gap-6 sm:flex-row justify-between items-center">
+                    <div className="pt-6 flex max-w-[600px] justify-between items-center w-full ">
                         <h1 className='text-2xl md:text-4xl font-semibold font-i tracking-wide capitalize'>{title}</h1>
-                        <div className="hidden md:block">
+                        <div className="">
                             {time && (<>
                                 <CountdownTimer targetDate="2025-02-25" />
                             </>)}
                         </div>
                     </div>
                     {arrow === "set" ? <Button className={""} Children={"View All"} /> : (<>
-                        <div className="flex items-center justify-end gap-[19px] ">
+                        <div className="flex items-center justify-end w-full  gap-[19px] ">
                             <div className='flex gap-2'>
                                 <div className="w-[46px] h-[46px] bg-gray_2-gray rounded-[80%] flex item items-center justify-center">
                                     <button onClick={() => swiperRef.current?.slidePrev()}> <img src={leftarrow} alt="left" /> </button>
@@ -43,7 +43,7 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                     </>)}
                 </div>
             </div>
-            <div className="imagesection pb-[73px]  mt-10">
+            <div className="imagesection pb-10 lg:pb-[73px] mt-6 lg:mt-10">
 
                 <Swiper slidesPerView={4}
                     spaceBetween={30}
@@ -55,10 +55,16 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                     }}
                     breakpoints={{
                         360 :{
-                            slidesPerView:1,
+                            slidesPerView:2,
                         },
                         640:{
                             slidesPerView:2,
+                        },
+                        768:{
+                            slidesPerView:3
+                        },
+                        1024:{
+                            slidesPerView:4
                         }
                     }}
                     className="mySwiper">
