@@ -13,6 +13,7 @@ import wishListJson from "../../json/wishlist.json"
 import CartListJson from '../../json/shoppingcart.json'
 const Header = () => {
   const [rotate, setRotate] = useState(false)
+  const [click, setclick] = useState(false)
 
   return (
     <>
@@ -38,50 +39,65 @@ const Header = () => {
       </header>
       <header className='pt-10 pb-4 border-b-2'>
         <div className="container flex lg:flex-row flex-col gap-6 lg:gap-0 items-center justify-between">
-          <h1 className='flex w-full justify-start lg:text-[24px] font-bold cursor-pointer font-i'>Exclusive</h1>
-          <div className="flex gap-6 sm:flex-row lg:gap-0 lg:flex-row flex-col items-center  max-w-[892px] w-full justify-between">
-            <ul className=' flex gap-8 justify-start w-full sm:flex-row sm:gap-4 lg:flex lg:flex-row items-center lg:justify-between menuLinks font-p lg:w-[367px] '>
-              {
-                menuLinks.map((item, index) => (
-                  <li className='inline-block' key={index}>
-                    <NavLink to={item.to}>{item.name}</NavLink>
-                  </li>
-                ))
-              }
+          <h1 className='flex justify-start lg:text-[24px] font-bold cursor-pointer font-i'>Exclusive</h1>
+          <div className="flex flex-col sm:flex-row lg:flex-row items-center justify-between max-w-[892px] w-full gap-4 lg:gap-0">
+            <ul className="flex flex-row  sm:flex-row gap-4 lg:w-[367px] menuLinks font-p items-center">
+              {menuLinks.map((item, index) => (
+                <li key={index} className="inline-block">
+                  <NavLink to={item.to} className="hover:text-red-500 transition-all">
+                    {item.name}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
-            <div className="hidden lg:flex items-center justify-center bg-[#F5F5F5]  p-[7px_12px] gap-[34px] text-sm text-[#000000] opacity-50 hover:text-red_1-red1 transition-all duration-200 group ">
-              <input type='text' placeholder='What are you looking for?' className='outline-none bg-[#F5F5F5]' />
-              <img className='group-hover:text-red_1-red1 cursor-pointer' src={image} />
+
+            <div className="hidden lg:flex items-center bg-[#F5F5F5] p-2 gap-2 text-sm text-black opacity-50 hover:text-red-500 transition-all duration-200 group ">
+              <input
+                type="text"
+                placeholder="What are you looking for?"
+                className="outline-none bg-[#F5F5F5] p-1 w-48"
+              />
+              <img className="cursor-pointer" src={image} alt="search" />
             </div>
-            <div className="justify-end w-full flex items-center lg:justify-center gap-4 cursor-pointer">
-              <img className='group-hover:text-red_1-red1 cursor-pointer' src={image} />
-              <Link to={"/wishlist"} className='relative'>
-                <img src={image1} />
-                <span className='absolute flex items-center justify-center -top-1 -right-1 w-4 h-4 text-xs leading-[18px] font-normal font-p  text-center bg-red_1-red1 text-white rounded-full'>{wishListJson?.length}</span>
+
+            <div className="flex items-center gap-4 cursor-pointer">
+              <Link to="/wishlist" className="relative">
+                <img src={image1} alt="wishlist" />
+                <span className="absolute -top-1 -right-1 w-4 h-4 flex items-center justify-center text-xs bg-red-500 text-white rounded-full">
+                  {wishListJson.length}
+                </span>
               </Link>
-              <Link to={"/cart"} className='relative'>
-                <img src={image2} />
-                <span className='absolute flex items-center justify-center -top-2 -right-1 w-4 h-4 text-xs font-normal font-p text-center bg-red_1-red1 text-white_1-white rounded-full'>{CartListJson?.length}</span>
+
+              <Link to="/cart" className="relative">
+                <img src={image2} alt="cart" />
+                <span className="absolute -top-2 -right-1 w-4 h-4 flex items-center justify-center text-xs bg-red-500 text-white rounded-full">
+                  {CartListJson.length}
+                </span>
               </Link>
-              <button onClick={() => setRotate(!rotate)} className={`transition-all duration-200 relative group${rotate && ""}`}>
-                {
-                  !rotate && <img src={"/src/assets/logo/userprofile.svg"} />
-                }
-                {
-                  rotate && <img src={"/src/assets/logo/userred.svg"} alt="" />
-                }
-                {
-                  rotate &&
-                  <ul className='absolute flex flex-col gap-[13px] py-2 px-4 bg-black_1-black bg-opacity-35 text-white z-10 transition-all duration-200 ease-in right-0 rounded-md w-[224px] '>
-                    <Link to={"/account"}>
-                      <li className='bar-popup font-p'><img src={image4} alt="img" />Manage My Account</li>
+
+              <button onClick={() => setRotate(!rotate)} className="relative group transition-all duration-200">
+                <img src={rotate ? "/src/assets/logo/userred.svg" : "/src/assets/logo/userprofile.svg"} alt="profile" />
+                {rotate && (
+                  <ul className="absolute right-0 mt-2 py-2 px-4 bg-black bg-opacity-35 text-white rounded-md w-56 z-10 transition-all duration-200 ease-in">
+                    <Link to="/account">
+                      <li className="flex items-center gap-2 p-2 hover:bg-gray-700 rounded-md">
+                        <img src={image4} alt="account" />Manage My Account
+                      </li>
                     </Link>
-                    <li className='bar-popup font-p'><img src={bagimg} alt="img" />My Order</li>
-                    <li className='bar-popup font-p'><img src={cancelimg} alt="img" />My cancellations</li>
-                    <li className='bar-popup font-p'><img src={reviewimg} alt="img" />My reviews</li>
-                    <li className='bar-popup font-p'><img src={logoutimg} alt="img" />LogOut</li>
+                    <li className="flex items-center gap-2 p-2 hover:bg-gray-700 rounded-md">
+                      <img src={bagimg} alt="orders" />My Order
+                    </li>
+                    <li className="flex items-center gap-2 p-2 hover:bg-gray-700 rounded-md">
+                      <img src={cancelimg} alt="cancellations" />My Cancellations
+                    </li>
+                    <li className="flex items-center gap-2 p-2 hover:bg-gray-700 rounded-md">
+                      <img src={reviewimg} alt="reviews" />My Reviews
+                    </li>
+                    <li className="flex items-center gap-2 p-2 hover:bg-gray-700 rounded-md">
+                      <img src={logoutimg} alt="logout" />Log Out
+                    </li>
                   </ul>
-                }
+                )}
               </button>
             </div>
           </div>

@@ -20,8 +20,8 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                     <div className="bg-red_1-red1 w-5 h-10 rounded-md"></div>
                     <div className="text-red_1-red1 font-p font-semibold capitalize">{info}</div>
                 </div>
-                <div className="flex flex-col gap-6 sm:flex-row justify-between items-center">
-                    <div className="pt-6 flex max-w-[600px] justify-between items-center w-full ">
+                <div className="flex flex-col gap-6 md:gap-10 md:flex-row justify-between items-center">
+                    <div className="pt-6 flex max-w-[600px] justify-between items-center w-full md:gap-10">
                         <h1 className='text-2xl md:text-4xl font-semibold font-i tracking-wide capitalize'>{title}</h1>
                         <div className="">
                             {time && (<>

@@ -15,7 +15,7 @@ const NewArrival = () => {
                             <h1 className='text-2xl md:text-3xl lg:text-4xl font-semibold font-i tracking-wide capitalize'>New Arrival</h1>
                         </div>
                     </div>
-                    <div className=" flex-col gap-6 md:flex md:flex-row pt-[60px] justify-between">
+                    <div className="flex flex-col gap-6 lg:flex lg:flex-row pt-[60px] justify-between">
                         <div className="bg-black_1-black pt-[89px] pl-[29px] pr-[30px] relative rounded-[4px]">
                             <div className="bg-[url('src/assets/images/playstation.png')] bg-cover bg-left w-[305px] h-[320px]  sm:w-[511px] sm:h-[511px] ">
                                 <div className="flex flex-col w-[242px] gap-4 pb-4 absolute bottom-[56px]">
@@ -37,7 +37,7 @@ const NewArrival = () => {
                             </div>
                             <div className="flex flex-col sm:flex-row gap-[30px]">
                                 <div className="bg-black_1-black py-[31px] px-[30px] relative rounded-[4px]">
-                                    <div className="bg-[url('src/assets/images/speakers.png')] bg-cover w-[210px] h-[222px] ">
+                                    <div className="bg-[url('src/assets/images/speakers.png')] bg-cover bg-left w-[210px] h-[222px] ">
                                         <div className=" absolute flex flex-col bottom-12 gap-2 pb-2">
                                             <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px] capitalize truncate'>Speakers</h2>
                                             <h6 className='text-white_1-white font-p font-normal text-sm capitalize truncate'>Amazon wireless speakers </h6>
@@ -46,7 +46,7 @@ const NewArrival = () => {
                                     </div>
                                 </div>
                                 <div className="bg-black_1-black py-[31px] px-[30px] relative rounded-[4px]">
-                                    <div className="bg-[url('src/assets/images/perfume.png')] bg-cover w-[210px] h-[222px] ">
+                                    <div className="bg-[url('src/assets/images/perfume.png')] bg-cover bg-left w-[210px] h-[222px] ">
                                         <div className=" absolute flex flex-col bottom-12 gap-2 pb-2">
                                             <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px] capitalize truncate'>Perfume</h2>
                                             <h6 className='text-white_1-white font-p font-normal text-sm'>GUCCI INTENSE OUD EDP </h6>

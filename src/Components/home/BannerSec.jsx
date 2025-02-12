@@ -19,8 +19,8 @@ function BannerSec() {
     return (
 
         <section className='mb-12 lg:mb-[127px] container'>
-            <div className=" flex-col flex sm:flex-row">
-                <div className='flex flex-col sm:flex-col w-[217px]  h-[114px] overflow-auto  lg:h-full categoryLink pt-4 lg:pt-10 transform mr-4'>
+            <div className=" flex-col flex sm:flex-col xl:flex-row ">
+                <div className='flex flex-col sm:flex-col w-[217px] h-[114px] overflow-auto sm:overflow-none lg:h-full categoryLink pt-4 lg:pt-10 transform mr-4'>
                     <Dropdown items={data} label="Woman’s Fashion" />
                     <Dropdown items={mensdata} label="Men’s Fashion" />
                     {
@@ -43,34 +43,40 @@ function BannerSec() {
                         ))
                     }
                 </div>
-                <div className=" border-none   p-0 lg:border-l-2 lg:pl-[45px]   ">
-                    <div className=' max-w-[892px] w-full    mt-10 '>
-                        <Swiper pagination={true} modules={[Pagination, Autoplay]} autoplay={{ delay: 2500 }} loop={true} className="mySwiper">
+                <div className="w-[2px] h-[384px] bg-gray_2-gray  mr-[45px] sm:hidden  xl:block hidden "></div>
+                <div className="">
+                    <div className="max-w-[892px] w-full mt-10 ">
+                        <Swiper
+                            pagination={{ clickable: true }}
+                            modules={[Pagination, Autoplay]}
+                            autoplay={{ delay: 2500 }}
+                            loop={true}
+                            className="mySwiper">
                             {
-                                bannerSection?.map((item, index) => (
-                                    <SwiperSlide key={index}>
-                                        <div className=" bg-black bannerSection text-blue-blue_1">
-                                            <NavLink to={item.to}>
-                                                <div className="flex-col-reverse sm:flex sm:flex-row  justify-center sm:justify-between">
-                                                    <div className='p-[58px_38px_47px_64px]  flex flex-col items-center md:items-start justify-center'>
-                                                        <div className="flex  gap-6 ">
-                                                            <img  src={logo} alt="img" />
-                                                            <h1 className='text-white font-p text-base flex items-center'>{item.logodetail}</h1>
-                                                        </div>
-                                                        <h1 className='text-white font-i sm:text-2xl lg:text-5xl max-w-[294px] pt-5 pb-5 line leading-[60px] tracking-wide font-semibold'>{item.text}</h1>
-                                                        <div className="flex gap-2 ">
-                                                            <h1 className='text-white font-p font-medium leading-[24px] border-b-[1px]'>{item.button}</h1>
-                                                            <img src={`src/assets/logo/${item.arrow}`} alt='img' />
-                                                        </div>
+                            bannerSection?.map((item, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className="bg-black text-blue-500 py-8 sm:py-12 px-4">
+                                        <NavLink to={item.to} className="block">
+                                            <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+                                                <div className='flex flex-col items-center sm:items-start text-center sm:text-left p-6 md:p-10'>
+                                                    <div className="flex gap-4 items-center">
+                                                        <img src={logo} alt="logo" className="w-10 h-10" />
+                                                        <h1 className='text-white font-medium text-lg'>{item.logodetail}</h1>
                                                     </div>
-                                                    <div className=" mx-w-[496px] pr-[20px] flex justify-center ">
-                                                        <img className="w-[290px] h-[260px] lg:w-[390px] lg:h-[344px] " src={`/src/assets/images/${item.image}`} alt="Additional img" />
+                                                    <h1 className='text-white font-bold text-xl sm:text-2xl lg:text-4xl max-w-xs pt-4 pb-4 leading-tight'>{item.text}</h1>
+                                                    <div className="flex items-center gap-2 border-b border-white pb-1">
+                                                        <h1 className='text-white font-medium text-lg'>{item.button}</h1>
+                                                        <img src={`/src/assets/logo/${item.arrow}`} alt='arrow' className="w-5 h-5" />
                                                     </div>
                                                 </div>
-                                            </NavLink>
-                                        </div>
-                                    </SwiperSlide>
-                                ))
+                                                <div className="flex justify-center">
+                                                    <img className="w-48 h-44 md:w-72 md:h-64" src={`/src/assets/images/${item.image}`} alt="banner" />
+                                                </div>
+                                            </div>
+                                        </NavLink>
+                                    </div>
+                                </SwiperSlide>
+                            ))
                             }
                         </Swiper>
                     </div>
