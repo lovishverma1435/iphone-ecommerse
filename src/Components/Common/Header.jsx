@@ -51,7 +51,7 @@ const Header = () => {
               ))}
             </ul>
 
-            <div className="hidden lg:flex items-center bg-[#F5F5F5] p-2 gap-2 text-sm text-black opacity-50 hover:text-red-500 transition-all duration-200 group ">
+            <div className="flex flex-row lg:flex items-center bg-[#F5F5F5] p-2 gap-2 text-sm text-black opacity-50 hover:text-red-500 transition-all duration-200 group ">
               <input
                 type="text"
                 placeholder="What are you looking for?"

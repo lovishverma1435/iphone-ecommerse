@@ -26,8 +26,8 @@ const NewArrival = () => {
                             </div>
                         </div>
                         <div className="flex flex-col gap-[32px]">
-                            <div className="bg-black_2-black pl-[138px] pb-[2px] relative rounded-[4px]">
-                                <div className="bg-[url('src/assets/images/woman.png')] bg-top sm:bg-right w-[190px] h-[300px] sm:w-[432px] sm:h-[286px]">
+                            <div className="bg-[#0D0D0D]  relative rounded-[4px] max-w-[570px] w-full h-[286px] ">
+                                <div className="bg-[url('src/assets/images/woman.png')] sm:w-full h-full bg-no-repeat  sm:bg-cover  ">
                                     <div className="absolute flex flex-col left-4 w-[255px] bottom-12 gap-4 pb-4">
                                         <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px] capitalize truncate'>Women’s Collections</h2>
                                         <h6 className='text-white_1-white font-p font-normal text-sm capitalize truncate'>Featured woman collections that give you another vibe.</h6>
@@ -35,9 +35,9 @@ const NewArrival = () => {
                                     <button className='text-white_1-white border-b font-p font-medium text-base absolute bottom-6 left-4'>Shop now</button>
                                 </div>
                             </div>
-                            <div className="flex flex-col sm:flex-row gap-[30px]">
-                                <div className="bg-black_1-black py-[31px] px-[30px] relative rounded-[4px]">
-                                    <div className="bg-[url('src/assets/images/speakers.png')] bg-cover bg-left w-[210px] h-[222px] ">
+                            <div className="flex flex-col sm:flex-row gap-[30px] ">
+                                <div className=" bg-[#303030] max-w-[270px] w-full py-[31px] px-[30px] relative rounded-[4px]">
+                                    <div className="bg-[url('src/assets/images/speakers.png')] bg-cover bg-center w-full  h-[222px] ">
                                         <div className=" absolute flex flex-col bottom-12 gap-2 pb-2">
                                             <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px] capitalize truncate'>Speakers</h2>
                                             <h6 className='text-white_1-white font-p font-normal text-sm capitalize truncate'>Amazon wireless speakers </h6>
@@ -45,8 +45,8 @@ const NewArrival = () => {
                                         <button className='text-white_1-white border-b font-p font-medium text-base absolute bottom-6'>Shop now</button>
                                     </div>
                                 </div>
-                                <div className="bg-black_1-black py-[31px] px-[30px] relative rounded-[4px]">
-                                    <div className="bg-[url('src/assets/images/perfume.png')] bg-cover bg-left w-[210px] h-[222px] ">
+                                <div className="bg-[#303030] max-w-[270px] w-full py-[31px] px-[30px] relative rounded-[4px]">
+                                    <div className="bg-[url('src/assets/images/perfume.png')] bg-cover bg-center w-full h-[222px] ">
                                         <div className=" absolute flex flex-col bottom-12 gap-2 pb-2">
                                             <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px] capitalize truncate'>Perfume</h2>
                                             <h6 className='text-white_1-white font-p font-normal text-sm'>GUCCI INTENSE OUD EDP </h6>

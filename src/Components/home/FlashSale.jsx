@@ -20,8 +20,8 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                     <div className="bg-red_1-red1 w-5 h-10 rounded-md"></div>
                     <div className="text-red_1-red1 font-p font-semibold capitalize">{info}</div>
                 </div>
-                <div className="flex flex-col gap-6 md:gap-10 md:flex-row justify-between items-center">
-                    <div className="pt-6 flex max-w-[600px] justify-between items-center w-full md:gap-10">
+                <div className="flex flex-col gap-6 justify-between md:gap-10 md:flex-row lg:justify-between items-center">
+                    <div className="pt-6 flex max-w-[600px] w-full gap-6 sm:gap-0 flex-col lg:justify-between items-start sm:justify-start sm:flex-col md:flex-col lg:flex-row  lg:w-[600px]  sm:items-center  md:gap-6">
                         <h1 className='text-2xl md:text-4xl font-semibold font-i tracking-wide capitalize'>{title}</h1>
                         <div className="">
                             {time && (<>
@@ -30,7 +30,7 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow }) => {
                         </div>
                     </div>
                     {arrow === "set" ? <Button className={""} Children={"View All"} /> : (<>
-                        <div className="flex items-center justify-end w-full  gap-[19px] ">
+                        <div className="flex items-center justify-end w-[100px]  gap-[19px] ">
                             <div className='flex gap-2'>
                                 <div className="w-[46px] h-[46px] bg-gray_2-gray rounded-[80%] flex item items-center justify-center">
                                     <button onClick={() => swiperRef.current?.slidePrev()}> <img src={leftarrow} alt="left" /> </button>

@@ -28,20 +28,23 @@ const CountdownTimer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="text-black flex gap-4 sm:gap-6 md:gap-9   " style={{ textAlign: "center", fontSize: "20px", fontWeight: "bold" }}>
-      <div className="">
+    <div className="text-black flex gap-4 sm:gap-6 md:gap-[17px]  h-[50px] " >
+      <div className="w-[46px]">
       <h2 className="font-p font-medium text-xs">Days</h2>
       <span className=" font-i font-bold text-[32px]">{timeLeft.days} </span>
       </div>
-      <div className="">
+      <div className="text-red_1-red1 w-[4px] h-full flex flex-col gap-2 items-center justify-center"><div className="w-[4px] h-[4px] bg-red_1-red1 rounded-full"></div> <div className="w-[4px] h-[4px] bg-red_1-red1 rounded-full"></div> </div>
+      <div className="w-[46px]">
       <h2 className="font-p font-medium text-xs">Hours</h2>
       <span className=" font-i font-bold text-[32px]">{timeLeft.hours} </span>
       </div>
-      <div className="">
+      <div className="text-red_1-red1 w-[4px] h-full flex flex-col gap-2 items-center justify-center"><div className="w-[4px] h-[4px] bg-red_1-red1 rounded-full"></div> <div className="w-[4px] h-[4px] bg-red_1-red1 rounded-full"></div> </div>
+      <div className="w-[46px]">
       <h2 className="font-p font-medium text-xs">Minutes</h2>
       <span className=" font-i font-bold text-[32px]">{timeLeft.minutes} </span>
       </div>
-      <div className="">
+      <div className="text-red_1-red1 w-[4px] h-full flex flex-col gap-2 items-center justify-center"><div className="w-[4px] h-[4px] bg-red_1-red1 rounded-full"></div> <div className="w-[4px] h-[4px] bg-red_1-red1 rounded-full"></div> </div>
+      <div className="w-[46px]">
       <h2 className="font-p font-medium text-xs">Seconds</h2>
       <span className=" font-i font-bold text-[32px]">{timeLeft.seconds}</span>
       </div>

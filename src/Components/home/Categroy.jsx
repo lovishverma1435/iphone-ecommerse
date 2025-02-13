@@ -20,7 +20,7 @@ const Categroy = () => {
                     <div className="bg-red_1-red1 w-5 h-10 rounded-md"></div>
                     <div className="text-red_1-red1 font-p font-semibold">Categories</div>
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex gap-6 sm:flex-row flex-col justify-start items-start sm:items-center sm:justify-between">
                     <div className="pt-6 flex items-end">
                         <h1 className='text-2xl lg:text-4xl font-semibold font-i tracking-wide'>Browse By Category</h1>
                     </div>
