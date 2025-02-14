@@ -27,7 +27,7 @@ const NewArrival = () => {
                         </div>
                         <div className="flex flex-col gap-[32px]">
                             <div className="bg-[#0D0D0D]  relative rounded-[4px] max-w-[570px] w-full h-[286px] ">
-                                <div className="bg-[url('src/assets/images/woman.png')] sm:w-full h-full bg-no-repeat  sm:bg-cover  ">
+                                <div className="bg-[url('src/assets/images/woman.png')] sm:w-full bg-no-repeat max-w-[570px] w-full h-[286px]  sm:bg-cover  ">
                                     <div className="absolute flex flex-col left-4 w-[255px] bottom-12 gap-4 pb-4">
                                         <h2 className='text-white_1-white font-i text-2xl leading-6 font-semibold tracking-[1px] capitalize truncate'>Women’s Collections</h2>
                                         <h6 className='text-white_1-white font-p font-normal text-sm capitalize truncate'>Featured woman collections that give you another vibe.</h6>
