@@ -14,10 +14,10 @@ const ExploreProducts = ({ data }) => {
                     </div>
                     <div className="flex justify-between items-center">
                         <div className="pt-6 flex max-w-[600px] justify-between items-end w-full ">
-                            <h1 className='text-4xl font-semibold font-i tracking-wide capitalize'>Explore Our Products</h1>
+                            <h1 className='text-2xl lg:text-4xl font-semibold font-i tracking-wide capitalize'>Explore Our Products</h1>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid  sm:grid-cols-2 lg:grid-cols-4 gap-x-[30px] gap-y-[60px] pt-[60px]">
+                    <div className="grid grid-cols-2 sm:grid  sm:grid-cols-2 lg:grid-cols-4 gap-x-[30px] gap-y-[60px] pt-[60px]">
                         {
                             data.map((item, index) => (
                                 <div key={index + Date.now() + item}>

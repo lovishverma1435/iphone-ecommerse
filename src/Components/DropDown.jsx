@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import Arowicon from "../assets/logo/DropDown.svg"
+import Arowicon from "../assets/logo/chevronrightsolid.svg"
 
 const Dropdown = ({ label, items }) => {
     const [isOpen, setIsOpen] = useState(0);
@@ -32,7 +32,7 @@ const Dropdown = ({ label, items }) => {
                 className="flex w-full justify-between pb-4 font-p  leading-6 text-base font-normal  hover:text-red_1-red1 capitalize"
                 onClick={() => setIsOpen(!isOpen)}>
                 {label}
-                <img src={Arowicon} className={`transition-all duration-200 ${isOpen && "rotate-90"}`} alt="" />
+                <img src={Arowicon} className={`w-5 h-5 pr-2 flex items-center justify-center transition-all duration-200 ${isOpen && "rotate-90"}`} alt="" />
             </button>
             <div
                 ref={dropdownRef}

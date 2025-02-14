@@ -46,17 +46,21 @@ const Categroy = () => {
                         }}
                         breakpoints={{
                             360:{
-                                slidesPerView:2
+                                slidesPerView:2.5
                             },
-                            640:{
+                            540:{
                                 slidesPerView:3
                             },
-                            768:{
+                            640:{
                                 slidesPerView:4
+                            },
+                            768:{
+                                slidesPerView:4.5
                             },
                             1024:{
                                 slidesPerView:6
                             }
+                            
                         }}
                         className="mySwiper">
 
@@ -65,7 +69,7 @@ const Categroy = () => {
                             <SwiperSlide key={index}>
                                 <NavLink to={item.to}>
                                     <div className="border rounded-md py-6 px-[57px] gap-3 lg:gap-4 flex flex-col items-center justify-center max-w-[170px] max-h-[145px] mb-[70px] hover:bg-red_1-red1 transition-all duration-200 ease-in hover:text-white_1-white  ">
-                                        <img src={item.logo} alt="" />
+                                        <img className='' src={item.logo} alt="" />
                                         <h1 className='font-normal text-base font-p'>{item.name}</h1>
                                     </div>
                                 </NavLink>

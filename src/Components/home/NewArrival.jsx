@@ -63,7 +63,7 @@ const NewArrival = () => {
                         logos.map((item, index) => (
                             <div key={index + Date.now() + item}>
                                 <NavLink to={item.to}>
-                                    <div className="flex flex-col items-center justify-center">
+                                    <div className="flex flex-col items-center justify-center pb-8">
                                         <img src={`src/assets/logo/${item.image}`} alt="image" />
                                         <h2 className='font-p font-semibold text-xl pt-5 pb-2'>{item.title}</h2>
                                         <h6 className='font-p font-normal text-sm'>{item.detail}</h6>

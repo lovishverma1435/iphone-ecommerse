@@ -62,22 +62,22 @@ function BannerSec() {
                         {
                             bannerSection?.map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className="bg-black text-blue-500 p-[25px] max-h-[344px] h-full max-w-[908px] w-full ">
+                                    <div className="bg-black text-blue-500 p-[25px] max-w-[908px] w-full">
                                         <NavLink to={item.to} className="">
                                             <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-                                                <div className='flex flex-col items-center sm:items-start text-center sm:text-left pl-16'>
+                                                <div className='flex flex-col items-start sm:items-start text-center sm:text-left pl-16'>
                                                     <div className="flex gap-4 items-center">
-                                                        <img src={logo} alt="logo" className="w-10 h-10" />
+                                                        <img src={logo} alt="logo" className=" w-8 h-8 sm:w-10 sm:h-10" />
                                                         <h1 className='text-white font-medium text-lg'>{item.logodetail}</h1>
                                                     </div>
-                                                    <h1 className='text-white font-bold text-4xl max-w-xs pt-4 pb-4 leading-tight'>{item.text}</h1>
+                                                    <h1 className='text-white font-bold text-xl md:text-3xl lg:text-4xl max-w-xs pt-4 pb-4 leading-tight'>{item.text}</h1>
                                                     <div className="flex items-center gap-2 border-b border-white pb-1">
                                                         <h1 className='text-white font-medium text-lg'>{item.button}</h1>
                                                         <img src={`/src/assets/logo/${item.arrow}`} alt='arrow' className="w-5 h-5" />
                                                     </div>
                                                 </div>
                                                 <div className="flex justify-center">
-                                                    <img className="w-[396px] h-[294px] " src={`/src/assets/images/${item.image}`} alt="banner" />
+                                                    <img className="w-[296px] h-[294px] lg:w-[396px] lg:h-[294px]  " src={`/src/assets/images/${item.image}`} alt="banner" />
                                                 </div>
                                             </div>
                                         </NavLink>

@@ -37,7 +37,7 @@ const Bannerpopup = () => {
                         }
                     </div>
                     <div className="z-50">
-                        <button onClick={() => setpopup(!popup)} className='w-[30px]   flex justify-center items-center lg:hidden  '>
+                        <button onClick={() => setpopup(!popup)} className='w-[30px] flex justify-center items-center lg:hidden  '>
                             <div className='flex items-center justify-center bg-red_1-red1 w-[30px] h-[50px] rounded-r rounded-br' > <img src={arrow} alt="arrow" className={`transition-all duration-300 ${popup ? "rotate-180" : "rotate-0"}`} />  </div>
                         </button></div>
                 </div>
