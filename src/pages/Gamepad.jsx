@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import Button from '../Components/ui/Button';
 import gamepad1 from '../json/gamepad.json'
-import Flashsales from "../Components/home/FlashSale";
+import FlashCards from "../Components/Cards/FlashCards";
 const Gamepad = () => {
   const [gamepad, setgamepad] = useState(false);
   const [isborder, setIsborder] = useState(0);
@@ -50,15 +50,16 @@ const Gamepad = () => {
     <>
       <main>
         <div className="container">
-          <div className="flex flex-col pt-[80px] pb-[140px] font-p font-normal text-sm leading-[21px] gap-[140px]">
-            <div className="flex ">
-              <div className="flex flex-col mr-[30px] gap-[16px] items-center w-[170px]">
+          <div className="flex flex-col pt-[80px] pb-[140px] font-p font-normal text-sm leading-[21px]">
+            <div className="flex flex-col lg:flex-row pb-[140px]">
+              <div className="flex flex-col-reverse">
+              <div className="flex  w-full md:hidden lg:flex-col mr-[30px] gap-[16px] items-center ">
                 {
                   gamepadshortimg.map((item, index) => (
                     <div key={item + index + Date.now()}>
                       <Link className="" to={item.to}>
                         <img
-                          className="hover:shadow-custom transition-all duration-300"
+                          className="hover:shadow-custom transition-all duration-300 w-[170px] h-[138px]"
                           src={`/src/assets/images/${item.img}`}
                           alt="gamepadshort"
                         />
@@ -69,6 +70,7 @@ const Gamepad = () => {
               {/* main image */}
               <div className="mr-[70px]">
                 <img src="/src/assets/images/gamepad5.png" alt="gamepadhead" />
+              </div>
               </div>
               {/*  */}
               <div className="flex flex-col max-w-[399px] w-full">
@@ -107,13 +109,13 @@ const Gamepad = () => {
                     Colours:</h4>
                   <div className="flex gap-2">
                     {
-                    color &&
+                      color &&
                       color.map((item, index) => (
                         <Fragment key={index}>
                           <div
                             className={`flex items-center w-5 h-5  justify-center rounded-full border-[2px]  ${isborder === index
-                                ? " border-black"
-                                : " border-none"
+                              ? " border-black"
+                              : " border-none"
                               }`}>
                             <button
                               style={{
@@ -126,27 +128,27 @@ const Gamepad = () => {
                           </div>
                         </Fragment>
                       ))
-                      }
+                    }
                   </div>
                 </div>
                 <div className="mb-6 flex items-center font-i font-normal text-xl leading-5 tracking-[0.03em]flex gap-6">
                   <h4>Size:</h4>
                   <div className="flex gap-4">
                     {
-                    gamepadsize.map((item, index) => (
-                      <div key={item + index + Date.now()}>
-                        <Link to={item.to}>
-                          <button
-                            onClick={() => setgamepad(index)}
-                            className={`${gamepad === index
+                      gamepadsize.map((item, index) => (
+                        <div key={item + index + Date.now()}>
+                          <Link to={item.to}>
+                            <button
+                              onClick={() => setgamepad(index)}
+                              className={`${gamepad === index
                                 ? "bg-red_1-red1 border-transparent text-white"
                                 : "border-gray_2-gray bg-white text-black"
-                              } flex w-[32px] p-[6px_7px] justify-center border  rounded font-customfont12 font-medium text-sm leading-[18px]`}>
-                            <h4>{item.name}</h4>
-                          </button>
-                        </Link>
-                      </div>
-                    ))
+                                } flex w-[32px] p-[6px_7px] justify-center border  rounded font-customfont12 font-medium text-sm leading-[18px]`}>
+                              <h4>{item.name}</h4>
+                            </button>
+                          </Link>
+                        </div>
+                      ))
                     }
                   </div>
                 </div>
@@ -156,7 +158,7 @@ const Gamepad = () => {
                       className="group hover:border-transparent transition-all duration-200 hover:bg-red_1-red1 w-[40px] p-[10px_8px] rounded-l border-l border-t  border-b border-gray_2-gray"
                       onClick={() => setcount(count === 1 ? count : count - 1)}>
                       <img
-                        className="group-hover:hidden" src="/src/assets/logo/iconminus.svg" alt="icon-minus"/>
+                        className="group-hover:hidden" src="/src/assets/logo/iconminus.svg" alt="icon-minus" />
                       <img
                         className="hidden group-hover:block" src="/src/assets/logo/iconminuscopy.svg" alt="icon-minus" />
                     </button>
@@ -168,12 +170,12 @@ const Gamepad = () => {
                       onClick={() => setcount(count === 20 ? count : count + 1)}
                     >
                       <img
-                        className="group-hover:hidden" src="/src/assets/logo/iconplus.svg" alt="icon-plus"/>
-                      <img className="hidden group-hover:block" src="/src/assets/logo/iconpluscopy.svg"  alt="icon-plus" />
+                        className="group-hover:hidden" src="/src/assets/logo/iconplus.svg" alt="icon-plus" />
+                      <img className="hidden group-hover:block" src="/src/assets/logo/iconpluscopy.svg" alt="icon-plus" />
                     </button>
                   </div>
                   <div className="mr-[19px] ">
-                    <Button Children={"Buy Now"} className={"font-medium text-base py-[10px] px-12 text-nowrap  flex justify-center items-center"}/>
+                    <Button Children={"Buy Now"} className={"font-medium text-base py-[10px] px-12 text-nowrap  flex justify-center items-center"} />
                   </div>
                   <div className="flex  items-center justify-center w-10 border border-gray_2-gray rounded">
                     <img src="/src/assets/logo/Wishlist.svg" alt="Wishlist" />
@@ -197,9 +199,21 @@ const Gamepad = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col ">
-              <Flashsales classmain={"hidden"} titleclass={"hidden"} buttonclass={"hidden"} headingclass={"w-[140px]"} info={"Related Item"} classhead={"gap-[60px]"} data={gamepad1} swiper={"hidden"} />
-
+            <div className="flex flex-col gap-[60px]">
+            <div className="flex items-center gap-4 ">
+                    <div className="bg-red_1-red1 w-5 h-10 rounded-md"></div>
+                    <div className="text-red_1-red1 font-p font-semibold capitalize">Related Items</div>
+                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex  lg:justify-between ">
+                    {
+                      gamepad1.map((item,index) =>(
+                        <div key={index}>
+                          <Link to={item.to}> <FlashCards discount={item.discount} heart={item.heart} view={item.view} image={item.image} name={item.name} offprice={item.offprice} price={item.price} rating={item.rating} viewer={item.viewer} /></Link>
+                         
+                        </div>
+                      ))
+                    }
+            </div>
             </div>
           </div>
         </div>

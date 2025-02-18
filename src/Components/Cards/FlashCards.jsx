@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 const FlashCards = ({ image, discount, heart, view, name, offprice, price, rating, viewer, RedWithDisscount }) => {
     return (
         <>
+        <div className="flex flex-col">
             <div className="bg-[#F5F5F5] group rounded-md relative">
                 <img className='relative group-hover:scale-90   transition-all duration-300 py-[35px] px-10' src={`/src/assets/images/${image}`} alt="image" />
                 <h2 className="flex items-center justify-center h-0 transition-all duration-300 bg-black w-[270px] rounded-b-md absolute bottom-0 font-p font-medium  text-base text-white truncate capitalize group-hover:h-[41px] ">Add To Cart</h2>
@@ -30,7 +31,7 @@ const FlashCards = ({ image, discount, heart, view, name, offprice, price, ratin
                     <img src={`/src/assets/logo/${rating}`} alt="rating" />
                     <h4 className='font-p text-sm font-semibold text-[#000000] opacity-[50%]'>{viewer}</h4>
                 </div>
-            </div>
+            </div></div>
         </>
     )
 }

@@ -39,54 +39,10 @@
         "offprice":"$375",
         "price":"$400",
         "rating":"four-star.png",
-        "discount":"-25%",
-        "heart":"heartsmall.svg",
-        "view":"QuickView.svg",
-        "viewer":"(99)"
-    },
-    {
-        "image":"frame611.png",
-        "name":"HAVIT HV-G92 Gamepad",
-        "offprice":"$120",
-        "price":"$160",
-        "rating":"five-star.svg",
-        "discount":"-40%",
-        "heart":"heartsmall.svg",
-        "view":"QuickView.svg",
-        "viewer":"(88)"
-    },
-    {
-        "image":"frame612.png",
-        "name":"AK-900 Wired Keyboard",
-        "offprice":"$960",
-        "price":"$1160",
-        "rating":"four-star.png",
-        "discount":"-35%",
-        "heart":"heartsmall.svg",
-        "view":"QuickView.svg",
-        "viewer":"(79)"
-    },
-    {
-        "image":"frame613.png",
-        "name":"IPS LCD Gaming Monitor",
-        "offprice":"$370",
-        "price":"$400",
-        "rating":"five-star.svg",
-        "discount":"-30%",
-        "heart":"heartsmall.svg",
-        "view":"QuickView.svg",
-        "viewer":"(69)"
-    },
-    {
-        "image":"frame614.png",
-        "name":"S-Series Comfort Chair ",
-        "offprice":"$375",
-        "price":"$400",
-        "rating":"four-star.png",
-        "discount":"-25%",
         "heart":"heartsmall.svg",
         "view":"QuickView.svg",
         "viewer":"(99)"
     }
+   
   
 ]

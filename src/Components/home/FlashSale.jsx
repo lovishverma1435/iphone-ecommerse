@@ -10,7 +10,7 @@ import { Navigation } from 'swiper/modules';
 import Button from '../ui/Button';
 import FlashCards from '../Cards/FlashCards';
 import CountdownTimer from '../CountdownTimer'
-const Bannersec2 = ({ info, title, data, time, showbutton, arrow ,titleclass,swiper}) => {
+const Bannersec2 = ({ info, title, data, time, showbutton, arrow ,titleclass}) => {
     const swiperRef = useRef();
 
     return (
@@ -30,7 +30,7 @@ const Bannersec2 = ({ info, title, data, time, showbutton, arrow ,titleclass,swi
                         </div>
                     </div>
                     {arrow === "set" ? <Button className={""} Children={"View All"} /> : (<>
-                        <div className={`flex  gap-5  justify-end ${swiper}  `}>
+                        <div className={`flex  gap-5  justify-end`}>
                             <div className='flex gap-2 max-w-[620px] w-full   justify-end'>
                                 <div className="w-[46px] h-[46px] bg-gray_2-gray rounded-[80%] flex item items-center justify-center">
                                     <button onClick={() => swiperRef.current?.slidePrev()}> <img src={leftarrow} alt="left" /> </button>
