@@ -1,11 +1,14 @@
 import React from 'react'
 import Button from '../Components/ui/Button'
 import loginimg from '../assets/images/SideImage.png'
+import Signup from '../Components/Cards/Signup'
+
 
 const LoginFile = () => {
   return (
     <>
-       <div className="flex items-center gap-[160px] pt-[60px] pr-[135px] pb-[140px]">
+    <Signup inputclass={"hidden"} loginclass={"hidden"} googleclass={"hidden"} buttontitle={"Log In"} hedding={"Log in to Exclusive"} headingtitle={"Enter your details below"}/>
+       {/* <div className="flex items-center gap-[160px] pt-[60px] pr-[135px] pb-[140px]">
         <div className="">
           <img src={loginimg} alt="image" />
         </div>
@@ -24,7 +27,7 @@ const LoginFile = () => {
            
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

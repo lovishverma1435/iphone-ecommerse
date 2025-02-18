@@ -13,7 +13,7 @@ const Bannerpopup = () => {
         <>
             <div className="flex relative mt-[40px]">
                 <div className="flex  absolute">
-                    <div className={` bg-black bg-opacity-95 text-white flex flex-col  pt-1 lg:pt-10  transition-all duration-300 ${popup ? "w-[217px] z-50 opacity-100" : "w-0 -z-10  opacity-0"}`}>
+                    <div className={` bg-black bg-opacity-95 text-white flex flex-col pt-1 lg:pt-10  transition-all duration-300 ${popup ? "w-[217px] z-50 opacity-100" : "w-0 -z-10  opacity-0"}`}>
                         <Dropdown items={data} label="Woman's Fashion" />
                         <Dropdown items={mensdata} label="Men's Fashion" />
                         {
@@ -37,9 +37,10 @@ const Bannerpopup = () => {
                         }
                     </div>
                     <div className="z-50">
-                        <button onClick={() => setpopup(!popup)} className='w-[30px] flex justify-center items-center lg:hidden  '>
+                        <button onClick={() => setpopup(!popup)} className='absolute w-[30px] h-[344px] flex justify-center items-center  lg:hidden  '>
                             <div className='flex items-center justify-center bg-red_1-red1 w-[30px] h-[50px] rounded-r rounded-br' > <img src={arrow} alt="arrow" className={`transition-all duration-300 ${popup ? "rotate-180" : "rotate-0"}`} />  </div>
-                        </button></div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </>

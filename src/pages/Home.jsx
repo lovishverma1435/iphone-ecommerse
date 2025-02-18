@@ -15,7 +15,7 @@ const Home = () => {
       <BannerSec/>
       <FlashSales time={true} showbutton={true} disoffer={true}  title={"flash sales"} info={"todays"} data={bannerdata}/>
       <Categroy/>
-      <FlashSales arrow={"set"} showbutton={false} title={"best selling products"} info={"This Month"} data={bestdata}/>
+      <FlashSales titleclass={"max-w-[400px] w-full"} arrow={"set"} showbutton={false} title={"best selling products"} info={"This Month"} data={bestdata}/>
       <JblSpeaker/>
       <ExploreProducts data={exploreprod}/>
       <NewArrival/>

@@ -198,7 +198,7 @@ const Gamepad = () => {
               </div>
             </div>
             <div className="flex flex-col ">
-              <Flashsales classmain={"hidden"} titleclass={"hidden"} buttonclass={"hidden"} headingclass={"w-[140px]"} info={"Related Item"} classhead={"gap-[60px]"} data={gamepad1} />
+              <Flashsales classmain={"hidden"} titleclass={"hidden"} buttonclass={"hidden"} headingclass={"w-[140px]"} info={"Related Item"} classhead={"gap-[60px]"} data={gamepad1} swiper={"hidden"} />
 
             </div>
           </div>

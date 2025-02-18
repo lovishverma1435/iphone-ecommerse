@@ -25,7 +25,7 @@ const NewArrival = () => {
                                 <button className='text-white_1-white border-b font-p font-medium text-base absolute bottom-8'>Shop Now</button>
                             </div>
                         </div>
-                        <div className="flex flex-col gap-[32px]">
+                        <div className="flex flex-col gap-[32px] max-w-[570px] w-full">
                             <div className="bg-[#0D0D0D]  relative rounded-[4px] max-w-[570px] w-full h-[286px] ">
                                 <div className="bg-[url('src/assets/images/woman.png')] sm:w-full bg-no-repeat max-w-[570px] w-full h-[286px]  sm:bg-cover  ">
                                     <div className="absolute flex flex-col left-4 w-[255px] bottom-12 gap-4 pb-4">

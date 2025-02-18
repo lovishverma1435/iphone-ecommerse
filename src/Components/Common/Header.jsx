@@ -13,7 +13,6 @@ import wishListJson from "../../json/wishlist.json"
 import CartListJson from '../../json/shoppingcart.json'
 const Header = () => {
   const [rotate, setRotate] = useState(false)
-  const [click, setclick] = useState(false)
   const [menu, setmenu] = useState(false)
 
   return (
@@ -74,7 +73,7 @@ const Header = () => {
                     {CartListJson.length}
                   </span>
                 </Link>
-                <div className="relative flex gap-3 items-end justify-center">
+                <div className="relative flex gap-3 items-center justify-center">
                   <button onClick={() => setRotate(!rotate)} className="relative group transition-all duration-200">
                     <img src={rotate ? "/src/assets/logo/userred.svg" : "/src/assets/logo/userprofile.svg"} alt="profile" />
                     {rotate && (
@@ -100,14 +99,24 @@ const Header = () => {
                     )}
                   </button>
                   <div className="block lg:hidden">
-                    <button className='w-6 h-6' onClick={() => setmenu(!menu)}>
-                      <img className={`${!menu ? "w-6 h-6" : "w-0 h-0"}  transition-all duration-300`} src="src/assets/logo/barssolid.svg" alt="" />
-                      <img className={`${menu ? "w-6 h-6" : "w-0 h-0"}  transition-all duration-300`} src="src/assets/logo/xmarksolid.svg" alt="" />
+                    <button
+                      className="  flex flex-col items-center gap-1 justify-between p-[2px] z-50"
+                      onClick={() => setmenu(!menu)}
+                    >
+                      <span
+                        className={`w-5 h-[2px] bg-black transition-transform duration-300 ${menu ? "translate-y-[6px] rotate-[-45deg]" : ""}`}
+                      ></span>
+                      <span
+                        className={`w-5 h-[2px] bg-black transition-opacity duration-300 ${menu ? "opacity-0" : ""}`}
+                      ></span>
+                      <span
+                        className={`w-5 h-[2px] bg-black transition-transform duration-300 ${menu ? "-translate-y-[6px] rotate-45" : ""}`}
+                      ></span>
                     </button>
                     {
                       menu && (
                         <>
-                          <ul className="absolute flex flex-col right-0 top-10 bg-black z-50 opacity-90 gap-4 w-[130px] menuLinks font-p items-start justify-start rounded py-4 px-8">
+                          <ul className="absolute flex flex-col right-0 top-10 bg-black z-50 opacity-90 gap-4 w-[235px] sm:w-[130px] menuLinks font-p items-start justify-start rounded py-4 px-8">
                             {menuLinks.map((item, index) => (
                               <li key={index} className="inline-block">
                                 <NavLink to={item.to} className="hover:text-red-500 text-white transition-all ">

@@ -67,7 +67,7 @@ function BannerSec() {
                                             <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
                                                 <div className='flex flex-col items-start sm:items-start text-center sm:text-left pl-16'>
                                                     <div className="flex gap-4 items-center">
-                                                        <img src={logo} alt="logo" className=" w-8 h-8 sm:w-10 sm:h-10" />
+                                                        <img src={logo} alt="logo" className=" w-7 h-8 sm:w-10 sm:h-10" />
                                                         <h1 className='text-white font-medium text-lg'>{item.logodetail}</h1>
                                                     </div>
                                                     <h1 className='text-white font-bold text-xl md:text-3xl lg:text-4xl max-w-xs pt-4 pb-4 leading-tight'>{item.text}</h1>

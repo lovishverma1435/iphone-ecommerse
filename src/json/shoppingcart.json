@@ -2,11 +2,13 @@
     {
         "image":"MonitorCartSmall.svg",
         "name":"LCD Monitor",
-        "price":"$560"
+        "price":"$650",
+        "subtotal":"$650"
     },
     {
         "image":"GamepadCartSmall.svg",
         "name":"H1 Gamepad",
-        "price":"$1300"
+        "price":"$550",
+        "subtotal":"$550"
     }
 ]

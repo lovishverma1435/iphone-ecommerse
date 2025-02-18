@@ -47,8 +47,7 @@ const Wishlistproducts = () => {
                             WishlistData.map((item, index) => (
                                 <div key={index}>
                                     <NavLink to={item.to}>
-
-                                        <Wishlist image={item.image} heading={item.heading} price={item.price} offprice={item.offprice} discount={item.discount} deleted={item.deleted} rating={item.rating} view={item.view} viewer={item.viewer} topnew={item.topnew}/>
+                                        <Wishlist image={item.image} heading={item.heading} price={item.price} offprice={item.offprice} discount={item.discount} deleted={item.deleted} rating={item.rating} view={item.view} viewer={item.viewer} topnew={item.topnew} />
                                     </NavLink>
                                 </div>
                             ))

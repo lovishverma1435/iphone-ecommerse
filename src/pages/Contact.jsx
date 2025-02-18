@@ -7,7 +7,7 @@ function Contact() {
     <>
       <section>
         <div className='container'>
-          <div className="flex pt-[181px] pb-[140px] gap-[30px]">
+          <div className="flex flex-col lg:flex-row pt-20 lg:pt-[181px] pb-[140px] gap-[30px]">
             <div className="w-[340px] shadow-Customnew pt-10 px-[35px] pb-[51px] ">
               <div className="w-[262px] flex flex-col gap-6">
                 <div className="flex gap-4 items-center">
@@ -31,9 +31,9 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <div className="w-[800px] shadow-Customnew py-10 px-8">
+            <div className="max-w-[800px] w-full shadow-Customnew py-10 px-8">
               <div className="flex flex-col gap-8 justify-between">
-                <div className="flex gap-4">
+                <div className="flex flex-col lg:flex-row gap-2 lg:gap-4">
                   <Input id={"type6"} type={"text"} placeholder={"Your Name"} />
                   <Input id={"type7"} type={"email"} placeholder={"Your Email"} />
                   <Input id={"type8"} type={"number"} placeholder={"Your Phone"} />
@@ -47,7 +47,7 @@ function Contact() {
                     ></textarea>
                   </div>
                 </div>
-                <div className="flex justify-end">
+                <div className="flex justify-center sm:justify-end">
                 <Button Children={"Send Massage"} />
                 </div>
               </div>
